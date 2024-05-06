@@ -45,3 +45,8 @@ link5.addEventListener("click", function(){
     div4.style.display = "none";
     div5.style.display = "block";
 })
+
+
+function myfunction() {
+    document.getElementById("dropdown_content").classList.toggle("show")
+}
