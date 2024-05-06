@@ -62,7 +62,14 @@ nav{
     font-weight:bold
 }
 .back-anchor {
-
+    display: flex;
+    margin: 4% 5%;
+    text-decoration: none;
+    align-content: center;
+}
+.back-text {
+    margin: 0 1%;
+    color: #39B54A;
 }
 
 .courses{
