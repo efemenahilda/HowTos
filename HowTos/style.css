@@ -71,7 +71,21 @@ nav{
     margin: 0 1%;
     color: #39B54A;
 }
+.sub-topic {
+    font-size: 35px;
+    font-weight: 550;
+    margin: 0 5%;
+}
+.stopic-text {
+    color: #39B54A;
+    margin: 0.5% 5%;
+}
+.maintext-container {
+    
+}
+.main-text {
 
+}
 .courses{
     display: block;
     width: 70%;
