@@ -98,7 +98,7 @@ function myFunctionThree() {
 
 
 
-window.onclick = function(event) {
+window.onmouseover = function(event) {
     if (!event.target.matches('.dropbutton_three')) {
       var dropdowns = document.getElementsByClassName("dropdown_content_three");
       var i;
