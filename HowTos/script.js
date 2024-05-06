@@ -47,6 +47,103 @@ link5.addEventListener("click", function(){
 })
 
 
-function myfunction() {
-    document.getElementById("dropdown_content").classList.toggle("show")
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
 }
+
+
+
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbutton')) {
+      var dropdowns = document.getElementsByClassName("dropdown_content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+  
+
+
+// 
+
+
+function myFunctionTwo() {
+    document.getElementById("myDropdown_two").classList.toggle("show_two");
+}
+
+
+
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbutton_two')) {
+      var dropdowns = document.getElementsByClassName("dropdown_content_two");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show_two')) {
+          openDropdown.classList.remove('show_two');
+        }
+      }
+    }
+  }
+
+//   
+
+function myFunctionThree() {
+    document.getElementById("myDropdown_three").classList.toggle("show_three");
+}
+
+
+
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbutton_three')) {
+      var dropdowns = document.getElementsByClassName("dropdown_content_three");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show_three')) {
+          openDropdown.classList.remove('show_three');
+        }
+      }
+    }
+  }
+
+  //
+
+
+
+  function myFunctionFour() {
+    document.getElementById("myDropdown_four").classList.toggle("show_four");
+}
+
+
+
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbutton_four')) {
+      var dropdowns = document.getElementsByClassName("dropdown_content_four");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show_four')) {
+          openDropdown.classList.remove('show_four');
+        }
+      }
+    }
+  }
+
+  
+
+
+
+
+
+
+
+
+
+
+ 
+  
