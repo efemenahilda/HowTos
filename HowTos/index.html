@@ -13,6 +13,7 @@
 </head>
 <body>
     <div class="main">
+      <!-- navigation -->
         <nav>
             <div class="search">
                 <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
@@ -25,11 +26,56 @@
         </nav>
 
         <div class="content" id="content">
-            <img src="images/NSPM.webp" alt="">
+            <img src="images/NSPM.webp" alt="" id="image">
+            <p class="image-text">HowTos</p>
 
+            <!-- Drop down menus -->
+            <div id="drop">
+               <div id="drop_one">
+                <button  onclick="myFunction()" class="dropbutton"> How to share a point <i class="fa-solid fa-chevron-down"></i></button>
+                
+                  <div id="myDropdown" class="dropdown_content">
+                    <a href="#">link1</a>
+                    <a href="#">link1</a>
+                    <a href="#">link1</a>
+                    <a href="#">link1</a>
+                  </div>
+               </div>
+
+               <div id="drop_two">
+                <button  onclick="myFunctionTwo()" class="dropbutton_two"> button <i class="fa-solid fa-chevron-down"></i></button>
+                  <div id="myDropdown_two" class="dropdown_content_two">
+                    <a href="#">link1</a>
+                    <a href="#">link1</a>
+                    <a href="#">link1</a>
+                    <a href="#">link1</a>
+                  </div>
+               </div>
+
+               <div id="drop_three">
+                <button  onmouseover="myFunctionThree(true)" class="dropbutton_three"> button <i class="fa-solid fa-chevron-down"></i></button>
+                <div id="myDropdown_three" class="dropdown_content_three">
+                    <a href="#">link1</a>
+                    <a href="#">link1</a>
+                    <a href="#">link1</a>
+                    <a href="#">link1</a> 
+                </div>
+              </div>
+               <div id="drop_four">
+                <button  onclick="myFunctionFour()" class="dropbutton_four"> button <i class="fa-solid fa-chevron-down"></i></button>
+
+                <div id="myDropdown_four" class="dropdown_content_four">
+                  <a href="#">link1</a>
+                  <a href="#">link1</a>
+                  <a href="#">link1</a>
+                  <a href="#">link1</a>
+               </div>
+               </div>
+               <div id="drop_five"></div>
+           </div>
         </div>
         <div id="sharepoint">ttttttt</div>
-        <div id="sage">ttttttt</div>
+        <div id="sage">ttttttttt</div>
         <div id="loan">ttttttt</div>
         <div id="howtos">ttttttt</div>
     </div>
