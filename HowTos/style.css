@@ -44,7 +44,7 @@ nav{
 }
 .content{
     flex: 5;
-    display: flex;
+    display: block;
 }
 #image{
     width: 60px;
@@ -60,6 +60,9 @@ nav{
     font-size: 25px;
     color:#008837;
     font-weight:bold
+}
+.back-anchor {
+
 }
 
 .courses{
