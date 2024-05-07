@@ -3,11 +3,16 @@ let div2 = document.getElementById("sharepoint")
 let div3 = document.getElementById("sage")
 let div4 = document.getElementById("loan")
 let div5 = document.getElementById("howtos")
+let div6 = document.getElementById("hero")
 let link1 = document.getElementById("course_1")
 let link2 = document.getElementById("course_2")
 let link3 = document.getElementById("course_3")
 let link4 = document.getElementById("course_4")
 let link5 = document.getElementById("course_2")
+let link6  = document.getElementById("hero_page")
+
+
+
 
 link1.addEventListener("click", function(){
     div1.style.display = "block";
@@ -15,6 +20,7 @@ link1.addEventListener("click", function(){
     div3.style.display = "none";
     div4.style.display = "none";
     div5.style.display = "none";
+    div6.style.display = "none"
 })
 
 link2.addEventListener("click", function(){
@@ -23,6 +29,7 @@ link2.addEventListener("click", function(){
     div3.style.display = "none";
     div4.style.display = "none";
     div5.style.display = "none";
+    div6.style.display = "none"
 })
 link3.addEventListener("click", function(){
     div1.style.display = "none"
@@ -30,6 +37,7 @@ link3.addEventListener("click", function(){
     div3.style.display = "block";
     div4.style.display = "none";
     div5.style.display = "none";
+    div6.style.display = "none"
 })
 link4.addEventListener("click", function(){
     div1.style.display = "none"
@@ -37,6 +45,7 @@ link4.addEventListener("click", function(){
     div3.style.display = "none";
     div4.style.display = "block";
     div5.style.display = "none";
+    div6.style.display = "none"
 })
 link5.addEventListener("click", function(){
     div1.style.display = "none"
@@ -44,8 +53,18 @@ link5.addEventListener("click", function(){
     div3.style.display = "none";
     div4.style.display = "none";
     div5.style.display = "block";
+    div6.style.display = "none"
 })
 
+link6.addEventListener("click",function(){
+  div1.style.display = "none"
+    div2.style.display = "none"
+    div3.style.display = "none";
+    div4.style.display = "none";
+    div5.style.display = "none";
+  div6.style.display = "block"
+
+})
 
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
@@ -98,7 +117,7 @@ function myFunctionThree() {
 
 
 
-window.onmouseover = function(event) {
+window.onclick = function(event) {
     if (!event.target.matches('.dropbutton_three')) {
       var dropdowns = document.getElementsByClassName("dropdown_content_three");
       var i;
@@ -112,14 +131,9 @@ window.onmouseover = function(event) {
   }
 
   //
-
-
-
   function myFunctionFour() {
     document.getElementById("myDropdown_four").classList.toggle("show_four");
 }
-
-
 
 window.onclick = function(event) {
     if (!event.target.matches('.dropbutton_four')) {
