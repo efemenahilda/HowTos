@@ -6,7 +6,7 @@
 }
 .main{
     display: flex;
-    height: 350vh;
+    height: 100vh;
     background-color:white;
 }
 .search{
@@ -37,14 +37,28 @@ input{
 nav{
     background-color: white;
     border-radius: 0px 30px 0px 0px;
-    height: 100%;
+    height: 100vh;
     flex: 1;
     box-shadow: 1px 1px 20px #3333334c;
+    /* position: sticky;
+    position: -webkit-sticky; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 13vw;
     z-index: 1;
 }
+
+/* end of nav */
+
 .content{
     flex: 5;
     display: block;
+    background-image: url(./images/nspmWave.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: 12%;
 }
 #image{
     width: 60px;
@@ -61,18 +75,275 @@ nav{
     color:#008837;
     font-weight:bold
 }
+@media screen and (max-width: 1000px) {
+    nav{
+        background-color: aqua;
+    }
+    #image{
+        width: 40px;
+        position: absolute;
+        left: 86.5%;
+        top:3%;
+        float: left;
+    }
+    .image-text {
+        position: absolute;
+        left: 91%;
+        top:5%;
+        font-size: 20px;
+        color:#008837;
+        font-weight:bold
+    }
+}
+.courses{
+    display: block;
+    width: 70%;
+    margin-top: 15%;
+    margin-left: 15%;
+    background: none;
+    text-decoration: none;
+    color: #333;
+    font-weight: 550;
+}
+.courses:hover{
+    color: #39B54A;
+}
+#sharepoint{
+    flex: 5;
+    background-color: aquamarine;
+    display: none;
+}
+#sage{
+    flex: 5;
+    background-color: pink;
+    display: none;
+}
+#loan{
+    flex: 5;
+    background-color: red;
+    display: none;
+}
+#howtos{
+    flex: 5;
+    background-color: blue;
+    display: none;
+}
+#drop{
+    position: relative;
+    display: inline-block;
+    width: 70%;
+    margin-left: 15%;
+    height: 100vh;
+    /* background-color: blue; */
+     display:grid
+}
+#drop_one{
+    width:100%;
+    /* background-color: yellow;  */
+    height: 7%;
+    border-radius: 15px;
+    margin-top: 4%;
+}
+.dropbutton{
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.077) ;
+    color: #333;
+    padding: 30px;
+    padding-left: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    margin-left: 5%;
+    width: 90%;
+    border-radius: 50px;
+    text-align: left;
+}
+.dropdown_content{
+    display: none; 
+    /* position: absolute; */
+    background-color: #f1f1f1;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: 5%;
+    width: 90%;
+}
+.dropdown_content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown_content a:hover {
+    background-color: #ddd;
+}
+.show {
+    display:block;
+}
+#drop_two{
+    width:100%;
+    /* background-color: yellow; */
+    height: 7%;
+    border-radius: 20px;
+}
+.dropbutton_two{
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.077) ;
+    color: #333;
+    padding: 30px;
+    padding-left: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    margin-left: 5%;
+    width: 90%;
+    border-radius: 50px;
+    text-align: left;
+}
+.dropdown_content_two{
+    display: none; 
+    /* position: absolute; */
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: 5%;
+    width: 90%;
+
+}
+.dropdown_content_two a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown_content_two a:hover {
+    background-color: #ddd;
+}
+.show_two {
+    display:block;
+}
+#drop_three{
+    width:100%;
+    /* background-color: yellow; */
+    height: 7%;
+    border-radius: 15px; 
+}
+.dropbutton_three{
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.077) ;
+    color: #333;
+    padding: 30px;
+    padding-left: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    margin-left: 5%;
+    width: 90%;
+    border-radius: 50px;
+    text-align: left;
+}
+.dropdown_content_three{
+    display: none; 
+    /* position: absolute; */
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: 5%;
+    width: 90%;
+}
+.dropdown_content_three a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown_content_three a:hover {
+    background-color: #ddd;
+}
+.show_three {
+    display:block;
+}
+#drop_four{
+    width:100%;
+    /* background-color: yellow; */
+    height: 7%;
+    border-radius: 15px;   
+}
+.dropbutton_four{
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.077) ;
+    color: #333;
+    padding: 30px;
+    padding-left: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    margin-left: 5%;
+    width: 90%;
+    border-radius: 50px;
+    text-align: left; 
+}
+.dropdown_content_four{
+    display: none; 
+    /* position: absolute; */
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: 5%;
+    width: 90%;
+}
+.dropdown_content_four a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown_content_four a:hover {
+    background-color: #ddd;
+}
+.show_four{
+    display:block;
+}
+.fa-chevron-down{
+    float: right;
+}
+
+                          /* logo and text starts */
+
+#image{
+    width: 60px;
+    position: absolute;
+    left: 86.5%;
+    top:3%;
+    float: left;
+}
+.image-text {
+    position: absolute;
+    left: 91%;
+    top:5%;
+    font-size: 25px;
+    color:#008837;
+    font-weight:bold
+}                                     /* logo and text ends */
 .back-anchor {
     display: flex;
     margin: 4% 5%;
     text-decoration: none;
     align-content: center;
-}
+} 
 .back-text {
     margin: 0 1%;
     color: #39B54A;
 }
 .sub-topic {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 550;
     margin: 0 5%;
 }
@@ -102,88 +373,22 @@ nav{
     margin-top: 5%;
     padding-right: 5%;
 }
-.courses{
-    display: block;
-    width: 70%;
-    margin-top: 15%;
-    margin-left: 15%;
-    background: none;
-    text-decoration: none;
-    color: #333;
-    font-weight: 550;
-}
-.courses:hover{
-    color: #39B54A;
-}
-/* .courses:active{
-    color: #39B54A;
-} */
-#sharepoint{
-    flex: 5;
-    background-color: aquamarine;
+
+
+.hero{
     display: none;
+    flex:5;
+    margin-left: 12%;
 }
-#sage{
-    flex: 5;
-    background-color: pink;
-    display: none;
+
+footer{
+    background-color: #333;
+    text-align: right;
+    height: 10vh;
+    color: white;
+    padding: 3%;
 }
-#loan{
-    flex: 5;
-    background-color: red;
-    display: none;
-}
-#howtos{
-    flex: 5;
-    background-color: blue;
-    display: none;
-}
-#drop{
+.footer-text{
+    margin-right: 5%;
     
-    position: relative;
-    display: inline-block;
-
-    width: 70%;
-    margin-left: 15%;
-    height: 100vh;
-    background-color: blue;
-    display: block;
 }
-#drop_one{
-width:100%;
-background-color: yellow;
-height: 7%;
-border-radius: 15px;
-margin-top: 7%;
-}
-#dropbutton{
-    
-        background-color: #3498DB;
-        color: white;
-        padding: 16px;
-        font-size: 16px;
-        border: none;
-        cursor: pointer;
-   margin-left: 20px;
-      
-}
-#dropdown_content{
-      display: none; 
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-#dropdown_content a{
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-}
-.dropdown_content a:hover {
-    background-color: #ddd;
-}
-
-.show {display:block;}
