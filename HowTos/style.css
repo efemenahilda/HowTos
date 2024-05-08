@@ -308,12 +308,176 @@ nav{
 .dropdown_content_four a:hover {
     background-color: #ddd;
 }
+.hero{
+    display: none;
+    flex:5;
+    margin-left: 12%;
+}
+
+.page2{
+    display: none;
+    flex:5;
+    margin-left: 12%;
+}
+.page3{
+    display: none;
+    flex:5;
+    margin-left: 12%;
+}
+.page4{
+    display: none;
+    flex:5;
+    margin-left: 12%;
+}
+.page5{
+    display: none;
+    flex:5;
+    margin-left: 12%;
+}
+.page6{
+    display: none;
+    flex:5;
+    margin-left: 12%;
+}
+.page7{
+    display: none;
+    flex:5;
+    margin-left: 12%; 
+}
+.page8{
+    display: none;
+    flex:5;
+    margin-left: 12%; 
+}
+.page9{
+    display: none;
+    flex:5;
+    margin-left: 12%; 
+}
+.page10{
+    display: none;
+    flex:5;
+    margin-left: 12%; 
+}
+.page11{
+    display: none;
+    flex:5;
+    margin-left: 12%; 
+}
+.page12{
+    display: none;
+    flex:5;
+    margin-left: 12%; 
+}
+.page13{
+    display: none;
+    flex:5;
+    margin-left: 12%; 
+}
+.page14{
+    display: none;
+    flex:5;
+    margin-left: 12%; 
+}
+.page15{
+    display: none;
+    flex:5;
+    margin-left: 12%; 
+}
+.page16{
+    display: none;
+    flex:5;
+    margin-left: 12%; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .show_four{
     display:block;
 }
 .fa-chevron-down{
     float: right;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                           /* logo and text starts */
 
@@ -372,13 +536,6 @@ nav{
     margin-left: 0;
     margin-top: 5%;
     padding-right: 5%;
-}
-
-
-.hero{
-    display: none;
-    flex:5;
-    margin-left: 12%;
 }
 
 footer{
