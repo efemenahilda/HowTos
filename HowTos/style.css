@@ -1,3 +1,14 @@
+@media (max-width: 800px) {
+    .courses {
+      font-size: 80%;
+    }
+}
+@media (max-height: 350px) {
+    footer {
+        height: 10%;
+        margin-top: 10%;
+    }
+}
 *{
     box-sizing: border-box;
     padding: 0;
@@ -583,7 +594,7 @@ nav{
 footer{
     background-color: #333;
     text-align: right;
-    height: 10vh;
+    height: 10%;
     color: white;
     padding: 3%;
 }
