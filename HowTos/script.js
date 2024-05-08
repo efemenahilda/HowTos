@@ -568,6 +568,10 @@ function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
 
+// function toggleDropdown() {
+//   var dropdown = document.getElementById('myDropdown');
+//   dropdown.classList.toggle('open');
+// }
 
 
 window.onclick = function(event) {
