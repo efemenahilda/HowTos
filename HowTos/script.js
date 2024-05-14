@@ -19,7 +19,7 @@ fetch('./sample.json')
     const post0 = data[0];
     const markup0 = `<p>${post0.body}</p>`;
     document.querySelector('p.main-test').insertAdjacentHTML('beforeend', markup0);
-    
+
     const post = data[1];
     const markup = `<p>${post.title}</p>`;
     document.querySelector('p.sub-topic').insertAdjacentHTML('beforeend', markup);
