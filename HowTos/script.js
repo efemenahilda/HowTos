@@ -1,3 +1,88 @@
+// fetch ('./sample.json')
+// .then(res => {
+//   return res.json();
+// })
+// .then(data => {
+//   data.forEach(post => {
+//     const markup = `<p>${post.body}</p>`;
+
+//     document.querySelector('p.main-test').insertAdjacentHTML('beforeend', markup)
+//   })
+// })
+// .catch(error => console.log(error));
+
+fetch('./sample.json')
+  .then(res => {
+    return res.json();
+  })
+  .then(data => {
+
+     const post = data[0].sections[1];
+    const markup = `<p>${post.name}</p>`;
+    document.querySelector('p.sub-topic').insertAdjacentHTML('beforeend', markup);
+
+
+    const post0 = data[0].sections[0];
+    const markup0 = `<p>${post0.content}</p>`;
+    document.querySelector('p.main-test').insertAdjacentHTML('beforeend', markup0);
+
+    
+
+
+    const post1 = data[1];
+    const markup1 = `<a>${post1.name}</a>`;
+    document.querySelector('a.courses').insertAdjacentHTML('beforeend', markup1);
+
+    const post2 = data[2];
+    const markup2 = `<a>${post2.name}</a>`;
+    document.querySelector('a.courses2').insertAdjacentHTML('beforeend', markup2);
+
+    const post3 = data[3];
+    const markup3 = `<a>${post3.name}</a>`;
+    document.querySelector('a.courses3').insertAdjacentHTML('beforeend', markup3);
+
+    const post4= data[4];
+    const markup4 = `<a>${post4.name}</a>`;
+    document.querySelector('a.courses4').insertAdjacentHTML('beforeend', markup4);
+    
+
+
+
+    
+
+
+  })
+  .catch(error => console.log(error));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 let div1 = document.getElementById("content")
 let div2 = document.getElementById("sharepoint")
 let div3 = document.getElementById("sage")
@@ -568,6 +653,10 @@ function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
 
+// function toggleDropdown() {
+//   var dropdown = document.getElementById('myDropdown');
+//   dropdown.classList.toggle('open');
+// }
 
 
 window.onclick = function(event) {
@@ -646,95 +735,6 @@ window.onclick = function(event) {
     }
   }
 
-
-  
-  ///   leftside   ////
-var leftSideElements = document.getElementById("course_1");
-leftSideElements.textContent="Sharepoint"
-
-var leftSideElements = document.getElementById("course_2");
-leftSideElements.textContent="Sage"
-
-var leftSideElements = document.getElementById("course_3");
-leftSideElements.textContent="Web Loan Verification"
-
-var leftSideElements = document.getElementById("course_4");
-leftSideElements.textContent="HowTos"
-
-////right side////
-
-//button labels
-var rightSideElements = document.getElementById("button_zero");
-
-var rightSideElements = document.getElementById("button_one");
-rightSideElements.textContent="button one"
-
-var rightSideElements = document.getElementById("button_two");
-rightSideElements.textContent="button two"
-
-var rightSideElements = document.getElementById("button_three");
-rightSideElements.textContent="button three"
-
-// //////
-
-/// dropdown link labels
- var rightSideElements = document.getElementById("hero_page");
-rightSideElements.textContent="one";
-// rightSideElements.style.color = "green";
-// rightSideElements.style.backgroundColor = "pink";
-
-var rightSideElements = document.getElementById("page2_link");
-rightSideElements.textContent="two"
-// rightSideElements.style.color = "green"
-
-var rightSideElements = document.getElementById("page3_link");
-rightSideElements.textContent="three"
-// rightSideElements.style.color = "green"
-
-var rightSideElements = document.getElementById("page4_link");
-rightSideElements.textContent="four"
-// rightSideElements.style.color = "green"
-
-var rightSideElements = document.getElementById("page5_link");
-rightSideElements.textContent="five"
-// leftSideElements.style.color= "red"
-
-var rightSideElements = document.getElementById("page6_link");
-rightSideElements.textContent="six"
-// leftSideElements.style.color= "green"
-
-var rightSideElements = document.getElementById("page7_link");
-rightSideElements.textContent="seven"
-// leftSideElements.style.color= "purple"
-
-var rightSideElements = document.getElementById("page8_link");
-rightSideElements.textContent="eight"
-// leftSideElements.style.color= "silver"
-
-var rightSideElements = document.getElementById("page9_link");
-rightSideElements.textContent="nine"
-// leftSideElements.style.color= "pink"
-
-var rightSideElements = document.getElementById("page10_link");
-rightSideElements.textContent="ten"
-
-var rightSideElements = document.getElementById("page11_link");
-rightSideElements.textContent="eleven"
-
-var rightSideElements = document.getElementById("page12_link");
-rightSideElements.textContent="twelve"
-
-var rightSideElements = document.getElementById("page13_link");
-rightSideElements.textContent="thirteen"
-
-var rightSideElements = document.getElementById("page14_link");
-rightSideElements.textContent="fourteen"
-
-var rightSideElements = document.getElementById("page15_link");
-rightSideElements.textContent="fifteen"
-
-var rightSideElements = document.getElementById("page16_link");
-rightSideElements.textContent="sixteen"
   
 
 
