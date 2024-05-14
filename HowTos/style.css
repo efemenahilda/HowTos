@@ -2,6 +2,16 @@
     .courses {
       font-size: 80%;
     }
+    .courses2 {
+        font-size: 80%;
+      }
+      .courses3 {
+        font-size: 80%;
+      }
+      .courses4 {
+        font-size: 80%;
+      }
+      
 }
 @media (max-height: 350px) {
     footer {
@@ -106,9 +116,58 @@ nav{
     color: #333;
     font-weight: 550;
 }
+.courses2{
+    display: block;
+    width: 70%;
+    margin-top: 15%;
+    margin-left: 15%;
+    background: none;
+    text-decoration: none;
+    color: #333;
+    font-weight: 550;
+}
+.courses3{
+    display: block;
+    width: 70%;
+    margin-top: 15%;
+    margin-left: 15%;
+    background: none;
+    text-decoration: none;
+    color: #333;
+    font-weight: 550;
+}
+.courses4{
+    display: block;
+    width: 70%;
+    margin-top: 15%;
+    margin-left: 15%;
+    background: none;
+    text-decoration: none;
+    color: #333;
+    font-weight: 550;
+}
+
+
+
 .courses:hover{
     color: #39B54A;
 }
+.courses2:hover{
+    color: #39B54A;
+}
+.courses3:hover{
+    color: #39B54A;
+}
+.courses3:hover{
+    color: #39B54A;
+}
+.courses4:hover{
+    color: #39B54A;
+}
+
+
+
+
 #sharepoint{
     flex: 5;
     background-color: aquamarine;
@@ -444,37 +503,6 @@ nav{
     flex:5;
     margin-left: 12%; 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
