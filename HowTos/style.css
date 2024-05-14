@@ -1,3 +1,14 @@
+@media (max-width: 800px) {
+    .courses {
+      font-size: 80%;
+    }
+}
+@media (max-height: 350px) {
+    footer {
+        height: 10%;
+        margin-top: 10%;
+    }
+}
 *{
     box-sizing: border-box;
     padding: 0;
@@ -62,38 +73,28 @@ nav{
 }
 #image{
     width: 60px;
-    position: absolute;
-    left: 86.5%;
-    top:3%;
-    float: left;
+    /* position: absolute; */
+    /* left: 87%; */
+    /* top:3%; */
+    margin-left: 20px;
+    margin-right: 20px;
+    float: right;
+    margin-top: 3px;
 }
 .image-text {
-    position: absolute;
-    left: 91%;
-    top:5%;
     font-size: 25px;
     color:#008837;
-    font-weight:bold
+    text-align: end;
+    font-weight:bold;
+    /* padding-right: 30px; */
+    padding-top:16px;
 }
-@media screen and (max-width: 1000px) {
-    nav{
-        background-color: aqua;
-    }
-    #image{
-        width: 40px;
-        position: absolute;
-        left: 86.5%;
-        top:3%;
-        float: left;
-    }
-    .image-text {
-        position: absolute;
-        left: 91%;
-        top:5%;
-        font-size: 20px;
-        color:#008837;
-        font-weight:bold
-    }
+.head{
+    /* width: 100%; */
+    /* background-color: aqua; */
+    margin-left: 3%;
+    height: 10%;
+    margin-top: 10px;
 }
 .courses{
     display: block;
@@ -128,6 +129,21 @@ nav{
     background-color: blue;
     display: none;
 }
+/* .open { */
+    /* display: block; */
+    /* animation: fadeIn 0.5s ease forwards; */
+  /* } */
+  
+  /* @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  } */
 #drop{
     position: relative;
     display: inline-block;
@@ -162,25 +178,35 @@ nav{
 .dropdown_content{
     display: none; 
     /* position: absolute; */
-    background-color: #f1f1f1;
-    min-width: 100px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #fff;
+    width: 100%;
     z-index: 1;
-    margin-left: 5%;
-    width: 90%;
+    padding: 0;
+    padding-top: 25px;
 }
 .dropdown_content a{
-    color: black;
-    padding: 12px 16px;
+    color: #39b549;
+    padding:10px 10px 10px 0;
     text-decoration: none;
     display: block;
 }
 .dropdown_content a:hover {
-    background-color: #ddd;
+    background-color: #39b54a0e;
 }
 .show {
     display:block;
+    animation: fadeIn 0.5s ease forwards;
 }
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 #drop_two{
     width:100%;
     /* background-color: yellow; */
@@ -205,26 +231,35 @@ nav{
 .dropdown_content_two{
     display: none; 
     /* position: absolute; */
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #fff;
+    width: 100%;
     z-index: 1;
-    margin-left: 5%;
-    width: 90%;
-
+    padding: 0;
+    padding-top: 25px;
 }
 .dropdown_content_two a{
-    color: black;
-    padding: 12px 16px;
+    color: #39b549;
+    padding:10px 10px 10px 0;
     text-decoration: none;
     display: block;
 }
 .dropdown_content_two a:hover {
-    background-color: #ddd;
+    background-color: #39b54a0e;
 }
 .show_two {
     display:block;
+    animation: fadeIn 0.5s ease forwards;
 }
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 #drop_three{
     width:100%;
     /* background-color: yellow; */
@@ -249,25 +284,34 @@ nav{
 .dropdown_content_three{
     display: none; 
     /* position: absolute; */
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #fff;
+    width: 100%;
     z-index: 1;
-    margin-left: 5%;
-    width: 90%;
+    padding: 0;
+    padding-top: 25px;
 }
 .dropdown_content_three a{
-    color: black;
-    padding: 12px 16px;
+    color: #39b549;
+    padding:10px 10px 10px 0;
     text-decoration: none;
     display: block;
 }
 .dropdown_content_three a:hover {
-    background-color: #ddd;
+    background-color: #39b54a0e;
 }
 .show_three {
-    display:block;
+    display:block;animation: fadeIn 0.5s ease forwards;
 }
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 #drop_four{
     width:100%;
     /* background-color: yellow; */
@@ -292,28 +336,39 @@ nav{
 .dropdown_content_four{
     display: none; 
     /* position: absolute; */
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #fff;
+    width: 100%;
     z-index: 1;
-    margin-left: 5%;
-    width: 90%;
+    padding: 0;
+    padding-top: 25px;
 }
 .dropdown_content_four a{
-    color: black;
-    padding: 12px 16px;
+    color: #39b549;
+    padding:10px 10px 10px 0;
     text-decoration: none;
     display: block;
 }
 .dropdown_content_four a:hover {
-    background-color: #ddd;
+    background-color: #39b54a0e;
 }
+.show_four{
+    display:block;animation: fadeIn 0.5s ease forwards;
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 .hero{
     display: none;
     flex:5;
     margin-left: 12%;
 }
-
 .page2{
     display: none;
     flex:5;
@@ -436,9 +491,7 @@ nav{
 
 
 
-.show_four{
-    display:block;
-}
+
 .fa-chevron-down{
     float: right;
 }
@@ -481,7 +534,7 @@ nav{
 
                           /* logo and text starts */
 
-#image{
+/* #image{
     width: 60px;
     position: absolute;
     left: 86.5%;
@@ -495,7 +548,7 @@ nav{
     font-size: 25px;
     color:#008837;
     font-weight:bold
-}                                     /* logo and text ends */
+}                                     logo and text ends */
 .back-anchor {
     display: flex;
     margin: 4% 5%;
@@ -541,7 +594,7 @@ nav{
 footer{
     background-color: #333;
     text-align: right;
-    height: 10vh;
+    height: 10%;
     color: white;
     padding: 3%;
 }

@@ -646,6 +646,95 @@ window.onclick = function(event) {
     }
   }
 
+
+  
+  ///   leftside   ////
+var leftSideElements = document.getElementById("course_1");
+leftSideElements.textContent="Sharepoint"
+
+var leftSideElements = document.getElementById("course_2");
+leftSideElements.textContent="Sage"
+
+var leftSideElements = document.getElementById("course_3");
+leftSideElements.textContent="Web Loan Verification"
+
+var leftSideElements = document.getElementById("course_4");
+leftSideElements.textContent="HowTos"
+
+////right side////
+
+//button labels
+var rightSideElements = document.getElementById("button_zero");
+
+var rightSideElements = document.getElementById("button_one");
+rightSideElements.textContent="button one"
+
+var rightSideElements = document.getElementById("button_two");
+rightSideElements.textContent="button two"
+
+var rightSideElements = document.getElementById("button_three");
+rightSideElements.textContent="button three"
+
+// //////
+
+/// dropdown link labels
+ var rightSideElements = document.getElementById("hero_page");
+rightSideElements.textContent="one";
+// rightSideElements.style.color = "green";
+// rightSideElements.style.backgroundColor = "pink";
+
+var rightSideElements = document.getElementById("page2_link");
+rightSideElements.textContent="two"
+// rightSideElements.style.color = "green"
+
+var rightSideElements = document.getElementById("page3_link");
+rightSideElements.textContent="three"
+// rightSideElements.style.color = "green"
+
+var rightSideElements = document.getElementById("page4_link");
+rightSideElements.textContent="four"
+// rightSideElements.style.color = "green"
+
+var rightSideElements = document.getElementById("page5_link");
+rightSideElements.textContent="five"
+// leftSideElements.style.color= "red"
+
+var rightSideElements = document.getElementById("page6_link");
+rightSideElements.textContent="six"
+// leftSideElements.style.color= "green"
+
+var rightSideElements = document.getElementById("page7_link");
+rightSideElements.textContent="seven"
+// leftSideElements.style.color= "purple"
+
+var rightSideElements = document.getElementById("page8_link");
+rightSideElements.textContent="eight"
+// leftSideElements.style.color= "silver"
+
+var rightSideElements = document.getElementById("page9_link");
+rightSideElements.textContent="nine"
+// leftSideElements.style.color= "pink"
+
+var rightSideElements = document.getElementById("page10_link");
+rightSideElements.textContent="ten"
+
+var rightSideElements = document.getElementById("page11_link");
+rightSideElements.textContent="eleven"
+
+var rightSideElements = document.getElementById("page12_link");
+rightSideElements.textContent="twelve"
+
+var rightSideElements = document.getElementById("page13_link");
+rightSideElements.textContent="thirteen"
+
+var rightSideElements = document.getElementById("page14_link");
+rightSideElements.textContent="fourteen"
+
+var rightSideElements = document.getElementById("page15_link");
+rightSideElements.textContent="fifteen"
+
+var rightSideElements = document.getElementById("page16_link");
+rightSideElements.textContent="sixteen"
   
 
 
