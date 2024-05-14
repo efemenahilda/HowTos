@@ -17,61 +17,49 @@ fetch('./sample.json')
   })
   .then(data => {
 
-     const post = data[0].sections[1];
-    const markup = `<p>${post.name}</p>`;
-    document.querySelector('p.sub-topic').insertAdjacentHTML('beforeend', markup);
 
-
-    const post0 = data[0].sections[0];
-    const markup0 = `<p>${post0.content}</p>`;
-    document.querySelector('p.main-test').insertAdjacentHTML('beforeend', markup0);
-
-    
-
-
-    const post1 = data[1];
-    const markup1 = `<a>${post1.name}</a>`;
+//nav//
+    const nav1 = data[0];
+    const markup1 = `<a>${nav1.name}</a>`;
     document.querySelector('a.courses').insertAdjacentHTML('beforeend', markup1);
 
-    const post2 = data[2];
-    const markup2 = `<a>${post2.name}</a>`;
+    const nav2 = data[1];
+    const markup2 = `<a>${nav2.name}</a>`;
     document.querySelector('a.courses2').insertAdjacentHTML('beforeend', markup2);
 
-    const post3 = data[3];
-    const markup3 = `<a>${post3.name}</a>`;
+    const nav3 = data[2];
+    const markup3 = `<a>${nav3.name}</a>`;
     document.querySelector('a.courses3').insertAdjacentHTML('beforeend', markup3);
 
-    const post4= data[4];
-    const markup4 = `<a>${post4.name}</a>`;
+    const nav4= data[3];
+    const markup4 = `<a>${nav4.name}</a>`;
     document.querySelector('a.courses4').insertAdjacentHTML('beforeend', markup4);
     
 
+    //buttons//
+
+    const button = data[0].sections[0];
+    const click = `<p>${button.name}</p>`;
+    document.querySelector('p.button').insertAdjacentHTML('beforeend',click);
+
+    const button2 = data[0].sections[1];
+    const click2 = `<p>${button2.name}</p>`;
+    document.querySelector('p.button2').insertAdjacentHTML('beforeend',click2);
+
+    const button3 = data[0].sections[2];
+    const click3 = `<p>${button3.name}</p>`;
+    document.querySelector('p.button3').insertAdjacentHTML('beforeend',click3);
+
+    const button4 = data[0].sections[3];
+    const click4 = `<p>${button4.name}</p>`;
+    document.querySelector('p.button4').insertAdjacentHTML('beforeend',click4);
 
 
-    
+
 
 
   })
   .catch(error => console.log(error));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -88,7 +76,6 @@ let div2 = document.getElementById("sharepoint")
 let div3 = document.getElementById("sage")
 let div4 = document.getElementById("loan")
 let div5 = document.getElementById("howtos")
-
 
 
 let div6 = document.getElementById("hero")
