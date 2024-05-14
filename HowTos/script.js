@@ -1,3 +1,35 @@
+// fetch ('./sample.json')
+// .then(res => {
+//   return res.json();
+// })
+// .then(data => {
+//   data.forEach(post => {
+//     const markup = `<p>${post.body}</p>`;
+
+//     document.querySelector('p.main-test').insertAdjacentHTML('beforeend', markup)
+//   })
+// })
+// .catch(error => console.log(error));
+
+fetch('./sample.json')
+  .then(res => {
+    return res.json();
+  })
+  .then(data => {
+    const post0 = data[0];
+    const markup0 = `<p>${post0.body}</p>`;
+    document.querySelector('p.main-test').insertAdjacentHTML('beforeend', markup0);
+
+    const post = data[1];
+    const markup = `<p>${post.title}</p>`;
+    document.querySelector('p.sub-topic').insertAdjacentHTML('beforeend', markup);
+  })
+  .catch(error => console.log(error));
+
+
+
+
+
 let div1 = document.getElementById("content")
 let div2 = document.getElementById("sharepoint")
 let div3 = document.getElementById("sage")
