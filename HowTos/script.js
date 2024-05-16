@@ -623,7 +623,6 @@ function myFunction() {
 //   dropdown.classList.toggle('open');
 // }
 
-
 window.onclick = function(event) {
     if (!event.target.matches('.dropbutton')) {
       var dropdowns = document.getElementsByClassName("dropdown_content");
@@ -645,9 +644,6 @@ window.onclick = function(event) {
 function myFunctionTwo() {
     document.getElementById("myDropdown_two").classList.toggle("show_two");
 }
-
-
-
 window.onclick = function(event) {
     if (!event.target.matches('.dropbutton_two')) {
       var dropdowns = document.getElementsByClassName("dropdown_content_two");
@@ -666,9 +662,6 @@ window.onclick = function(event) {
 function myFunctionThree() {
     document.getElementById("myDropdown_three").classList.toggle("show_three");
 }
-
-
-
 window.onclick = function(event) {
     if (!event.target.matches('.dropbutton_three')) {
       var dropdowns = document.getElementsByClassName("dropdown_content_three");
@@ -686,7 +679,6 @@ window.onclick = function(event) {
   function myFunctionFour() {
     document.getElementById("myDropdown_four").classList.toggle("show_four");
 }
-
 window.onclick = function(event) {
     if (!event.target.matches('.dropbutton_four')) {
       var dropdowns = document.getElementsByClassName("dropdown_content_four");
