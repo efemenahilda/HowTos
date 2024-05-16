@@ -268,11 +268,11 @@ link8.addEventListener("click",function(){
   div3.style.display = "none";
   div4.style.display = "none";
  
-div6.style.display = "none"
-div7.style.display = "none"
-div8.style.display = "block"
-div9.style.display = "none"
-div10.style.display = "none"
+  div6.style.display = "none"
+  div7.style.display = "none"
+  div8.style.display = "block"
+  div9.style.display = "none"
+  div10.style.display = "none"
   div11.style.display = "none"
   div12.style.display = "none";
   div13.style.display = "none";
