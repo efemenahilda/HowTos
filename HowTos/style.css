@@ -167,12 +167,14 @@ nav{
 
 
 
-
+/* 
 #sharepoint{
     flex: 5;
     background-color: aquamarine;
     display: none;
-}
+} */
+
+
 #sage{
     flex: 5;
     background-color: pink;

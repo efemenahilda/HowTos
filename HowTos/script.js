@@ -10,13 +10,12 @@
 //   })
 // })
 // .catch(error => console.log(error));
-
-fetch('./sample.json')
+{
+ fetch('./sample.json')
   .then(res => {
     return res.json();
   })
   .then(data => {
-
 
 //nav//
     const nav1 = data[0];
@@ -34,7 +33,6 @@ fetch('./sample.json')
     const nav4= data[3];
     const markup4 = `<a>${nav4.name}</a>`;
     document.querySelector('a.courses4').insertAdjacentHTML('beforeend', markup4);
-    
 
     //buttons//
 
@@ -62,20 +60,34 @@ fetch('./sample.json')
   .catch(error => console.log(error));
 
 
+}
 
-
-
-
-
-
-
+let link1 = document.getElementById("course_1")
+let link2 = document.getElementById("course_2");
+let link3 = document.getElementById("course_3");
+let link4 = document.getElementById("course_4");
+let link6  = document.getElementById("hero_page")
+let link7 = document.getElementById("page2_link")
+let link8 = document.getElementById("page3_link")
+let link9 = document.getElementById("page4_link")
+let link10 = document.getElementById("page5_link")
+let link11 = document.getElementById("page6_link")
+let link12 = document.getElementById("page7_link")
+let link13 = document.getElementById("page8_link")
+let link14 = document.getElementById("page9_link")
+let link15 = document.getElementById("page10_link")
+let link16 = document.getElementById("page11_link")
+let link17 = document.getElementById("page12_link")
+let link18 = document.getElementById("page13_link")
+let link19 = document.getElementById("page14_link")
+let link20 = document.getElementById("page15_link")
+let link21 = document.getElementById("page16_link")
 
 
 let div1 = document.getElementById("content")
-let div2 = document.getElementById("sharepoint")
-let div3 = document.getElementById("sage")
-let div4 = document.getElementById("loan")
-let div5 = document.getElementById("howtos")
+let div2 = document.getElementById("sage");
+let div3 = document.getElementById("loan");
+let div4 = document.getElementById("howtos");
 
 
 let div6 = document.getElementById("hero")
@@ -96,164 +108,14 @@ let div20 = document.getElementById("page15")
 let div21= document.getElementById("page16")
 
 
+link1.addEventListener("click",function(){
 
-let link1 = document.getElementById("course_1")
-let link2 = document.getElementById("course_2")
-let link3 = document.getElementById("course_3")
-let link4 = document.getElementById("course_4")
-let link5 = document.getElementById("course_2")
+  div1.style.display = "block";
+  div2.style.display = "none";
+  div3.style.display = "none";
+  div4.style.display = "none";
 
-let link6  = document.getElementById("hero_page")
-let link7 = document.getElementById("page2_link")
-let link8 = document.getElementById("page3_link")
-let link9 = document.getElementById("page4_link")
-let link10 = document.getElementById("page5_link")
-let link11 = document.getElementById("page6_link")
-let link12 = document.getElementById("page7_link")
-let link13 = document.getElementById("page8_link")
-let link14 = document.getElementById("page9_link")
-let link15 = document.getElementById("page10_link")
-let link16 = document.getElementById("page11_link")
-let link17 = document.getElementById("page12_link")
-let link18 = document.getElementById("page13_link")
-let link19 = document.getElementById("page14_link")
-let link20 = document.getElementById("page15_link")
-let link21 = document.getElementById("page16_link")
-
-
-
-// switching pages
-
-link1.addEventListener("click", function(){
-    div1.style.display = "block";
-    div2.style.display = "none";
-    div3.style.display = "none";
-    div4.style.display = "none";
-    div5.style.display = "none";
-    div6.style.display = "none"
-    div7.style.display = "none"
-    div8.style.display = "none"
-    div9.style.display = "none"
-div10.style.display = "none"
-  div11.style.display = "none"
-  div12.style.display = "none";
-  div13.style.display = "none";
-  div14.style.display = "none";
-div15.style.display = "none"
-div16.style.display = "none"
-div17.style.display = "none"
-div18.style.display = "none"
-div19.style.display = "none"
-div20.style.display = "none"
-div21.style.display = "none"
-})
-
-link2.addEventListener("click", function(){
-    div1.style.display = "none"
-    div2.style.display = "block"
-    div3.style.display = "none";
-    div4.style.display = "none";
-    div5.style.display = "none";
-    div6.style.display = "none"
-    div7.style.display = "none"
-    div8.style.display = "none"
-    div9.style.display = "none"
-div10.style.display = "none"
-  div11.style.display = "none"
-  div12.style.display = "none";
-  div13.style.display = "none";
-  div14.style.display = "none";
-div15.style.display = "none"
-div16.style.display = "none"
-div17.style.display = "none"
-div18.style.display = "none"
-div19.style.display = "none"
-div20.style.display = "none"
-div21.style.display = "none"
-})
-link3.addEventListener("click", function(){
-    div1.style.display = "none"
-    div2.style.display = "none"
-    div3.style.display = "block";
-    div4.style.display = "none";
-    div5.style.display = "none";
-    div6.style.display = "none"
-    div7.style.display = "none"
-    div8.style.display = "none"
-    div9.style.display = "none"
-div10.style.display = "none"
-  div11.style.display = "none"
-  div12.style.display = "none";
-  div13.style.display = "none";
-  div14.style.display = "none";
-div15.style.display = "none"
-div16.style.display = "none"
-div17.style.display = "none"
-div18.style.display = "none"
-div19.style.display = "none"
-div20.style.display = "none"
-div21.style.display = "none"
-})
-link4.addEventListener("click", function(){
-    div1.style.display = "none"
-    div2.style.display = "none"
-    div3.style.display = "none";
-    div4.style.display = "block";
-    div5.style.display = "none";
-    div6.style.display = "none"
-    div7.style.display = "none"
-    div8.style.display = "none"
-    div9.style.display = "none"
-div10.style.display = "none"
-  div11.style.display = "none"
-  div12.style.display = "none";
-  div13.style.display = "none";
-  div14.style.display = "none";
-div15.style.display = "none"
-div16.style.display = "none"
-div17.style.display = "none"
-div18.style.display = "none"
-div19.style.display = "none"
-div20.style.display = "none"
-div21.style.display = "none"
-})
-link5.addEventListener("click", function(){
-    div1.style.display = "none"
-    div2.style.display = "none"
-    div3.style.display = "none";
-    div4.style.display = "none";
-    div5.style.display = "block";
-    div6.style.display = "none"
-    div7.style.display = "none"
-    div8.style.display = "none"
-    div9.style.display = "none"
-div10.style.display = "none"
-  div11.style.display = "none"
-  div12.style.display = "none";
-  div13.style.display = "none";
-  div14.style.display = "none";
-div15.style.display = "none"
-div16.style.display = "none"
-div17.style.display = "none"
-div18.style.display = "none"
-div19.style.display = "none"
-div20.style.display = "none"
-div21.style.display = "none"
-})
-
-
-
-
-
-
-
-link6.addEventListener("click",function(){
-  div1.style.display = "none"
-    div2.style.display = "none"
-    div3.style.display = "none";
-    div4.style.display = "none";
-    div5.style.display = "none";
-  div6.style.display = "block"
+  div6.style.display = "none"
   div7.style.display = "none"
   div8.style.display = "none"
   div9.style.display = "none"
@@ -269,30 +131,135 @@ div18.style.display = "none"
 div19.style.display = "none"
 div20.style.display = "none"
 div21.style.display = "none"
+
 })
 
-link7.addEventListener( "click", function(){
-  div1.style.display = "none"
-    div2.style.display = "none"
-    div3.style.display = "none";
-    div4.style.display = "none";
-    div5.style.display = "none";
+link2.addEventListener("click",function(){
+
+        div1.style.display = "none";
+        div2.style.display = "block";
+        div3.style.display = "none";
+        div4.style.display = "none";
+
+        div6.style.display = "none"
+        div7.style.display = "none"
+        div8.style.display = "none"
+        div9.style.display = "none"
+      div10.style.display = "none"
+        div11.style.display = "none"
+        div12.style.display = "none";
+        div13.style.display = "none";
+        div14.style.display = "none";
+      div15.style.display = "none"
+      div16.style.display = "none"
+      div17.style.display = "none"
+      div18.style.display = "none"
+      div19.style.display = "none"
+      div20.style.display = "none"
+      div21.style.display = "none"
+      
+})
+
+link3.addEventListener("click",function(){
+
+  div1.style.display = "none";
+  div2.style.display = "none";
+  div3.style.display = "block";
+  div4.style.display = "none";
+
   div6.style.display = "none"
-  div7.style.display = "block"
+  div7.style.display = "none"
   div8.style.display = "none"
   div9.style.display = "none"
-div10.style.display = "none"
+ div10.style.display = "none"
   div11.style.display = "none"
   div12.style.display = "none";
   div13.style.display = "none";
   div14.style.display = "none";
-div15.style.display = "none"
-div16.style.display = "none"
-div17.style.display = "none"
-div18.style.display = "none"
-div19.style.display = "none"
-div20.style.display = "none"
-div21.style.display = "none"
+  div15.style.display = "none"
+  div16.style.display = "none"
+  div17.style.display = "none"
+  div18.style.display = "none"
+  div19.style.display = "none"
+  div20.style.display = "none"
+  div21.style.display = "none"
+
+
+})
+
+link4.addEventListener("click",function(){
+
+  div1.style.display = "none";
+  div2.style.display = "none";
+  div3.style.display = "none";
+  div4.style.display = "block";
+
+  div6.style.display = "none"
+  div7.style.display = "none"
+  div8.style.display = "none"
+  div9.style.display = "none"
+  div10.style.display = "none"
+  div11.style.display = "none"
+  div12.style.display = "none";
+  div13.style.display = "none";
+  div14.style.display = "none";
+  div15.style.display = "none"
+  div16.style.display = "none"
+  div17.style.display = "none"
+  div18.style.display = "none"
+  div19.style.display = "none"
+  div20.style.display = "none"
+  div21.style.display = "none"
+
+
+})
+
+link6.addEventListener("click",function(){
+    div1.style.display = "none"
+    div2.style.display = "none"
+    div3.style.display = "none";
+    div4.style.display = "none";
+   
+    div6.style.display = "block"
+    div7.style.display = "none"
+    div8.style.display = "none"
+    div9.style.display = "none"
+    div10.style.display = "none"
+    div11.style.display = "none"
+    div12.style.display = "none";
+    div13.style.display = "none";
+    div14.style.display = "none";
+    div15.style.display = "none"
+    div16.style.display = "none"
+    div17.style.display = "none"
+    div18.style.display = "none"
+    div19.style.display = "none"
+    div20.style.display = "none"
+    div21.style.display = "none"
+})
+
+link7.addEventListener( "click", function(){
+    div1.style.display = "none"
+    div2.style.display = "none"
+    div3.style.display = "none";
+    div4.style.display = "none";
+   
+   div6.style.display = "none"
+   div7.style.display = "block"
+   div8.style.display = "none"
+   div9.style.display = "none"
+   div10.style.display = "none"
+   div11.style.display = "none"
+   div12.style.display = "none";
+   div13.style.display = "none";
+   div14.style.display = "none";
+   div15.style.display = "none"
+   div16.style.display = "none"
+   div17.style.display = "none"
+   div18.style.display = "none"
+   div19.style.display = "none"
+   div20.style.display = "none"
+   div21.style.display = "none"
 })
 
 link8.addEventListener("click",function(){
@@ -300,7 +267,7 @@ link8.addEventListener("click",function(){
   div2.style.display = "none"
   div3.style.display = "none";
   div4.style.display = "none";
-  div5.style.display = "none";
+ 
 div6.style.display = "none"
 div7.style.display = "none"
 div8.style.display = "block"
@@ -325,7 +292,7 @@ link9.addEventListener("click",function(){
   div2.style.display = "none"
   div3.style.display = "none";
   div4.style.display = "none";
-  div5.style.display = "none";
+  
 div6.style.display = "none"
 div7.style.display = "none"
 div8.style.display = "none"
@@ -350,7 +317,7 @@ link10.addEventListener("click",function(){
   div2.style.display = "none"
   div3.style.display = "none";
   div4.style.display = "none";
-  div5.style.display = "none";
+  
 div6.style.display = "none"
 div7.style.display = "none"
 div8.style.display = "none"
@@ -374,7 +341,7 @@ link11.addEventListener("click",function(){
   div2.style.display = "none"
   div3.style.display = "none";
   div4.style.display = "none";
-  div5.style.display = "none";
+
 div6.style.display = "none"
 div7.style.display = "none"
 div8.style.display = "none"
@@ -398,7 +365,7 @@ link12.addEventListener("click",function(){
   div2.style.display = "none"
   div3.style.display = "none";
   div4.style.display = "none";
-  div5.style.display = "none";
+  
 div6.style.display = "none"
 div7.style.display = "none"
 div8.style.display = "none"
@@ -422,7 +389,7 @@ link13.addEventListener("click",function(){
   div2.style.display = "none"
   div3.style.display = "none";
   div4.style.display = "none";
-  div5.style.display = "none";
+  
 div6.style.display = "none"
 div7.style.display = "none"
 div8.style.display = "none"
@@ -446,7 +413,7 @@ link14.addEventListener("click",function(){
   div2.style.display = "none"
   div3.style.display = "none";
   div4.style.display = "none";
-  div5.style.display = "none";
+ 
 div6.style.display = "none"
 div7.style.display = "none"
 div8.style.display = "none"
@@ -470,7 +437,7 @@ link15.addEventListener("click",function(){
   div2.style.display = "none"
   div3.style.display = "none";
   div4.style.display = "none";
-  div5.style.display = "none";
+ 
 div6.style.display = "none"
 div7.style.display = "none"
 div8.style.display = "none"
@@ -494,7 +461,7 @@ link16.addEventListener("click",function(){
   div2.style.display = "none"
   div3.style.display = "none";
   div4.style.display = "none";
-  div5.style.display = "none";
+ 
 div6.style.display = "none"
 div7.style.display = "none"
 div8.style.display = "block"
@@ -518,7 +485,7 @@ link17.addEventListener("click",function(){
   div2.style.display = "none"
   div3.style.display = "none";
   div4.style.display = "none";
-  div5.style.display = "none";
+ 
 div6.style.display = "none"
 div7.style.display = "none"
 div8.style.display = "none"
@@ -542,7 +509,7 @@ link18.addEventListener("click",function(){
   div2.style.display = "none"
   div3.style.display = "none";
   div4.style.display = "none";
-  div5.style.display = "none";
+ 
 div6.style.display = "none"
 div7.style.display = "none"
 div8.style.display = "none"
@@ -566,7 +533,7 @@ link19.addEventListener("click",function(){
   div2.style.display = "none"
   div3.style.display = "none";
   div4.style.display = "none";
-  div5.style.display = "none";
+  
 div6.style.display = "none"
 div7.style.display = "none"
 div8.style.display = "none"
@@ -590,7 +557,7 @@ link20.addEventListener("click",function(){
   div2.style.display = "none"
   div3.style.display = "none";
   div4.style.display = "none";
-  div5.style.display = "none";
+ 
 div6.style.display = "none"
 div7.style.display = "none"
 div8.style.display = "none"
@@ -614,7 +581,7 @@ link21.addEventListener("click",function(){
   div2.style.display = "none"
   div3.style.display = "none";
   div4.style.display = "none";
-  div5.style.display = "none";
+  
 div6.style.display = "none"
 div7.style.display = "none"
 div8.style.display = "none"
@@ -633,6 +600,17 @@ div20.style.display = "none"
 div21.style.display = "block"
 
 })
+
+
+
+
+
+
+
+
+// // switching pages
+
+
 
   // drop down function on the divs
 
