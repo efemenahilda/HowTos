@@ -52,6 +52,15 @@
     const click4 = `<p>${button4.name}</p>`;
     document.querySelector('p.button4').insertAdjacentHTML('beforeend',click4);
 
+    const backtext = data[0].sections[0].sections[0];
+    const header = `<p>${backtext.content}</p>`;
+    document.querySelector('p.back-text').insertAdjacentHTML('beforeend',header);
+
+    
+  
+   const stopictext = data[0].sections[0].sections[1];
+   const subtopic = `<p>${stopictext.content}</p>`;
+   document.querySelector('p.stopic-text').insertAdjacentHTML('beforeend',subtopic);
 
 
 
