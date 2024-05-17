@@ -54,7 +54,7 @@ fetch('./sample.json')
 
     const button4 = data[0].sections[3];
     const click4 = `<p>${button4.name}</p>`;
-    document.querySelector('p.button4').insertAdjacentHTML('beforeend',click4
+    document.querySelector('p.button4').insertAdjacentHTML('beforeend',click4)
   })
   .catch(error => console.log(error));
 
