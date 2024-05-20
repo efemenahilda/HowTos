@@ -617,9 +617,26 @@ div21.style.display = "block"
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // // switching pages
-
-
 
   // drop down function on the divs
 
@@ -644,11 +661,8 @@ window.onclick = function(event) {
       }
     }
   }
-  
-
 
 // 
-
 
 function myFunctionTwo() {
     document.getElementById("myDropdown_two").classList.toggle("show_two");
