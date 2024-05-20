@@ -167,26 +167,31 @@ nav{
 
 
 
-
+/* 
 #sharepoint{
     flex: 5;
     background-color: aquamarine;
     display: none;
-}
+} */
+
+
 #sage{
     flex: 5;
     background-color: pink;
     display: none;
+    margin-left: 13%;
 }
 #loan{
     flex: 5;
     background-color: red;
     display: none;
+    margin-left: 13%;
 }
 #howtos{
     flex: 5;
     background-color: blue;
     display: none;
+    margin-left: 13%;
 }
 /* .open { */
     /* display: block; */
@@ -203,7 +208,8 @@ nav{
       transform: translateY(0);
     }
   } */
-#drop{
+
+  #drop{
     position: relative;
     display: inline-block;
     width: 70%;
