@@ -589,7 +589,7 @@ nav{
     text-decoration: none;
     align-content: center;
 } 
-.back-text {
+.back-text,.back-text-2,.back-text-3,.back-text-4,.back-text-5,.back-text-6,.back-text-7,.back-text-8,.back-text-9,.back-text-10,.back-text-11,.back-text-12,.back-text-13,.back-text-14,.back-text-15 ,.back-text-16 {
     margin: 0 1%;
     color: #39B54A;
 }
@@ -598,7 +598,7 @@ nav{
     font-weight: 550;
     margin: 0 5%;
 }
-.stopic-text {
+.stopic-text ,.stopic-text-2,.stopic-text-3,.stopic-text-4,.stopic-text-5,.stopic-text-6,.stopic-text-7,.stopic-text-8,.stopic-text-9,.stopic-text-10,.stopic-text-11,.stopic-text-12,.stopic-text-13,.stopic-text-14,.stopic-text-15,.stopic-text-16{
     color: #39B54A;
     margin: 0.5% 5%;
 }
