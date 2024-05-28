@@ -531,41 +531,6 @@ nav{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                           /* logo and text starts */
 
 /* #image{
@@ -589,7 +554,7 @@ nav{
     text-decoration: none;
     align-content: center;
 } 
-.back-text {
+.back-text,.back-text-2,.back-text-3,.back-text-4,.back-text-5,.back-text-6,.back-text-7,.back-text-8,.back-text-9,.back-text-10,.back-text-11,.back-text-12,.back-text-13,.back-text-14,.back-text-15 ,.back-text-16 {
     margin: 0 1%;
     color: #39B54A;
 }
@@ -598,7 +563,7 @@ nav{
     font-weight: 550;
     margin: 0 5%;
 }
-.stopic-text {
+.stopic-text ,.stopic-text-2,.stopic-text-3,.stopic-text-4,.stopic-text-5,.stopic-text-6,.stopic-text-7,.stopic-text-8,.stopic-text-9,.stopic-text-10,.stopic-text-11,.stopic-text-12,.stopic-text-13,.stopic-text-14,.stopic-text-15,.stopic-text-16{
     color: #39B54A;
     margin: 0.5% 5%;
 }
@@ -636,3 +601,80 @@ footer{
     margin-right: 5%;
     
 }
+
+@media screen and (max-width: 400px) {  /* mobile view */
+    /* body {
+      background-color: lightgreen;
+    } */
+    nav{
+        display: none;
+    }
+    #image{
+        width: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+        float: right;
+        margin-top: 5px;
+    }
+    .image-text {
+        font-size: 20px;
+        color:#008837;
+        text-align: end;
+        font-weight:bold;
+        padding-top:12px;
+    }
+    .fa-bars{
+        color: #008837;
+        font-size: 30px;
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+    .content{
+        margin-left: -50px;
+    }
+     #drop{
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        margin-left: 5px;
+        height: 100vh;
+        /* background-color: blue; */
+        display:grid
+    }
+    .dropbutton{
+        padding: 25px;
+        padding-left: 30px;
+        font-size: 16px;
+        font-weight: 600;
+        margin-left: 7%;
+        width: 80%;
+        border-radius: 50px;
+    }
+    .dropbutton_two{
+        padding: 25px;
+        padding-left: 30px;
+        font-size: 16px;
+        font-weight: 600;
+        margin-left: 7%;
+        width: 80%;
+        border-radius: 50px;
+    }
+    .dropbutton_three{
+        padding: 25px;
+        padding-left: 30px;
+        font-size: 16px;
+        font-weight: 600;
+        margin-left: 7%;
+        width: 80%;
+        border-radius: 50px;
+    }
+    .dropbutton_four{
+        padding: 25px;
+        padding-left: 30px;
+        font-size: 16px;
+        font-weight: 600;
+        margin-left: 7%;
+        width: 80%;
+        border-radius: 50px;
+    }
+  }
