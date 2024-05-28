@@ -348,7 +348,7 @@
    const bodyB16 = `<p>${bodytextB16.bodytextB}</p>`;
    document.querySelector('p.link-content-16b').insertAdjacentHTML('beforeend',bodyB16);
 
-
+  
 
 
 
@@ -479,7 +479,6 @@ div18.style.display = "none"
 div19.style.display = "none"
 div20.style.display = "none"
 div21.style.display = "none"
-
 
 })
 

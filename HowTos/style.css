@@ -601,3 +601,80 @@ footer{
     margin-right: 5%;
     
 }
+
+@media screen and (max-width: 400px) {  /* mobile view */
+    /* body {
+      background-color: lightgreen;
+    } */
+    nav{
+        display: none;
+    }
+    #image{
+        width: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+        float: right;
+        margin-top: 5px;
+    }
+    .image-text {
+        font-size: 20px;
+        color:#008837;
+        text-align: end;
+        font-weight:bold;
+        padding-top:12px;
+    }
+    .fa-bars{
+        color: #008837;
+        font-size: 30px;
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+    .content{
+        margin-left: -50px;
+    }
+     #drop{
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        margin-left: 5px;
+        height: 100vh;
+        /* background-color: blue; */
+        display:grid
+    }
+    .dropbutton{
+        padding: 25px;
+        padding-left: 30px;
+        font-size: 16px;
+        font-weight: 600;
+        margin-left: 7%;
+        width: 80%;
+        border-radius: 50px;
+    }
+    .dropbutton_two{
+        padding: 25px;
+        padding-left: 30px;
+        font-size: 16px;
+        font-weight: 600;
+        margin-left: 7%;
+        width: 80%;
+        border-radius: 50px;
+    }
+    .dropbutton_three{
+        padding: 25px;
+        padding-left: 30px;
+        font-size: 16px;
+        font-weight: 600;
+        margin-left: 7%;
+        width: 80%;
+        border-radius: 50px;
+    }
+    .dropbutton_four{
+        padding: 25px;
+        padding-left: 30px;
+        font-size: 16px;
+        font-weight: 600;
+        margin-left: 7%;
+        width: 80%;
+        border-radius: 50px;
+    }
+  }

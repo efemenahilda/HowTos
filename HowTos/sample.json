@@ -16,7 +16,7 @@
               
 "sections":[
 {
- "name":"link1",
+"name":"link1",
 "id": 1,
 "content": "oneeeeeee",
 "stopic":"oneeeeeee",
@@ -30,7 +30,7 @@
 "name":"link2",
 "id": 1,
 "content": "twoooo",
- "stopic":"gooooo",
+"stopic":"gooooo",
 "bodytext":"est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla",
 "bodytextB":"est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla",
 "has_img":"op",
@@ -193,10 +193,6 @@
 }
 ]         
 },
-        
-
-
-
 
 {
 "name":"button_two",
@@ -227,77 +223,20 @@
     
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 {
 "name":"Sage",
 "id": 1,
 "content": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
 "has_img":"op",
 "img":"op",
-"description": " et99 suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molest",
-"sections":[
-{
-"name":"zero",
-"id": 1,
-"content": "content",
-"has_img":"op",
-"img":"op",
-"description": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
-},
-{
-"name":"one",
-"id": 1,
-"content": "content",
-"has_img":"op",
-"img":"op",
-"description": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
-}
-]
+"description": " et99 suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molest"
 },
 
 {
 "name":"Web Loan Verification",
 "id": 1,
 "content": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
-"description": " et99 suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molest",
-"sections":[
-{
-"name":"zero",
-"id": 1,
-"content": "content",
-"has_img":"op",
-"img":"op",
-"description": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
-},
-{
-"name":"one",
-"id": 1,
-"content": "content",
-"has_img":"op",
-"img":"op",
-"description": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
-}
-]
+"description": " et99 suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molest"
 },
 
 {
@@ -307,24 +246,6 @@
 "content": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
 "has_img":"op",
 "img":"op",
-"description": " et99 suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molest",
-"sections":[
-{
-"name":"zero",
-"id": 1,
-"content": "content",
-"has_img":"op",
-"img":"op",
-"description": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
-},
-{
-"name":"one",
-"id": 1,
-"content": "content",
-"has_img":"op",
-"img":"op",
-"description": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
-}
-]
+"description": " et99 suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molest"
 }
 ]     
