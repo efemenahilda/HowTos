@@ -36,32 +36,34 @@
     const markup4 = `<a>${nav4.name}</a>`;
     document.querySelector('a.courses4').insertAdjacentHTML('beforeend', markup4);
 
-    //buttons//
+    // //buttons//
 
-    const button = data[0].sections[0];
-    const click = `<p>${button.name}</p>`;
-    document.querySelector('p.button').insertAdjacentHTML('beforeend',click);
+    // const button = data[0].sections[0];
+    // const click = `<p>${button.name}</p>`;
+    // document.querySelector('p.button').insertAdjacentHTML('beforeend',click);
 
-    const button2 = data[0].sections[1];
-    const click2 = `<p>${button2.name}</p>`;
-    document.querySelector('p.button2').insertAdjacentHTML('beforeend',click2);
+    // const button2 = data[0].sections[1];
+    // const click2 = `<p>${button2.name}</p>`;
+    // document.querySelector('p.button2').insertAdjacentHTML('beforeend',click2);
 
-    const button3 = data[0].sections[2];
-    const click3 = `<p>${button3.name}</p>`;
-    document.querySelector('p.button3').insertAdjacentHTML('beforeend',click3);
+    // const button3 = data[0].sections[2];
+    // const click3 = `<p>${button3.name}</p>`;
+    // document.querySelector('p.button3').insertAdjacentHTML('beforeend',click3);
 
-    const button4 = data[0].sections[3];
-    const click4 = `<p>${button4.name}</p>`;
+    // const button4 = data[0].sections[3];
+    // const click4 = `<p>${button4.name}</p>`;
 
-    document.querySelector('p.button4').insertAdjacentHTML('beforeend',click4)
+    // document.querySelector('p.button4').insertAdjacentHTML('beforeend',click4)
 
 
-    document.querySelector('p.button4').insertAdjacentHTML('beforeend',click4)
-
-    document.querySelector('p.button4').insertAdjacentHTML('beforeend',click4);
+   
 
 
     ///link1//
+
+    const nav_a = data[0].sections[0].sections[0];
+    const markup_a = `<a>${nav_a.name}</a>`;
+    document.querySelector('a.a').insertAdjacentHTML('beforeend', markup_a);
 
     const backtext = data[0].sections[0].sections[0];
     const header = `<p>${backtext.content}</p>`;
@@ -75,13 +77,18 @@
    const body = `<p>${bodytext.bodytext}</p>`;
    document.querySelector('p.link-content').insertAdjacentHTML('beforeend',body);
   
-   const img = data[0].sections[0].sections[0];
-   const img1 = `<img>${img.hasimg}</img>`;
-   document.querySelector('img.main-image-1').insertAdjacentHTML('beforeend',img1);
+  //  const img = data[0].sections[0].sections[0];
+  //  const img1 = `<img>${img.hasimg}</img>`;
+  //  document.querySelector('img.main-image-1').insertAdjacentHTML('beforeend',img1);
   
 
 
 ////link2///
+
+const nav_b = data[0].sections[0].sections[1];
+const markup_b = `<a>${nav_b.name}</a>`;
+document.querySelector('a.b').insertAdjacentHTML('beforeend', markup_b);
+
 
    const backtext2 = data[0].sections[0].sections[1];
    const header2 = `<p>${backtext2.content}</p>`;
@@ -101,6 +108,11 @@
 
   ///link3///
 
+  const nav_c = data[0].sections[0].sections[2];
+const markup_c = `<a>${nav_c.name}</a>`;
+document.querySelector('a.c').insertAdjacentHTML('beforeend', markup_c);
+
+
    const backtext3 = data[0].sections[0].sections[2];
    const header3 = `<p>${backtext3.content}</p>`;
    document.querySelector('p.back-text-3').insertAdjacentHTML('beforeend',header3);
@@ -119,7 +131,10 @@
    document.querySelector('p.link-content-3b').insertAdjacentHTML('beforeend',bodyB3);
 
   ///link4
-
+  const nav_d = data[0].sections[0].sections[3];
+  const markup_d = `<a>${nav_d.name}</a>`;
+  document.querySelector('a.d').insertAdjacentHTML('beforeend', markup_d);
+  
    const backtext4 = data[0].sections[0].sections[3];
    const header4 = `<p>${backtext4.content}</p>`;
    document.querySelector('p.back-text-4').insertAdjacentHTML('beforeend',header4);
@@ -137,6 +152,10 @@
    document.querySelector('p.link-content-4b').insertAdjacentHTML('beforeend',bodyB4);
 
    ///link5///
+   const nav_e = data[0].sections[0].sections[4];
+     const markup_e = `<a>${nav_e.name}</a>`;
+     document.querySelector('a.e').insertAdjacentHTML('beforeend', markup_e);
+
 
    const backtext5 = data[0].sections[0].sections[4];
    const header5 = `<p>${backtext5.content}</p>`;
@@ -156,6 +175,10 @@
 
   
    ///link6///
+   const nav_f = data[0].sections[0].sections[5];
+   const markup_f = `<a>${nav_f.name}</a>`;
+   document.querySelector('a.f').insertAdjacentHTML('beforeend', markup_f);
+   
 
    const backtext6 = data[0].sections[0].sections[5];
    const header6 = `<p>${backtext6.content}</p>`;
@@ -175,6 +198,10 @@
 
    ////link7///
 
+    const nav_g = data[0].sections[0].sections[6];
+    const markup_g = `<a>${nav_g.name}</a>`;
+    document.querySelector('a.g').insertAdjacentHTML('beforeend', markup_g);
+
    const backtext7 = data[0].sections[0].sections[6];
    const header7= `<p>${backtext7.content}</p>`;
    document.querySelector('p.back-text-7').insertAdjacentHTML('beforeend',header7);
@@ -192,6 +219,11 @@
    document.querySelector('p.link-content-7b').insertAdjacentHTML('beforeend',bodyB7);
 
    //link8///
+
+   const nav_h = data[0].sections[0].sections[7];
+   const markup_h = `<a>${nav_h.name}</a>`;
+   document.querySelector('a.h').insertAdjacentHTML('beforeend', markup_h);
+   
 
    const backtext8 = data[0].sections[0].sections[7];
    const header8= `<p>${backtext8.content}</p>`;
@@ -211,6 +243,11 @@
 
    ///link9///
 
+   const nav_i = data[0].sections[0].sections[8];
+   const markup_i = `<a>${nav_i.name}</a>`;
+   document.querySelector('a.i').insertAdjacentHTML('beforeend', markup_i);
+   
+
    const backtext9 = data[0].sections[0].sections[8];
    const header9 = `<p>${backtext9.content}</p>`;
    document.querySelector('p.back-text-9').insertAdjacentHTML('beforeend',header9);
@@ -228,6 +265,12 @@
    document.querySelector('p.link-content-9b').insertAdjacentHTML('beforeend',bodyB9);
 
    ///link10//
+
+
+   const nav_j = data[0].sections[0].sections[9];
+const markup_j = `<a>${nav_j.name}</a>`;
+document.querySelector('a.j').insertAdjacentHTML('beforeend', markup_j);
+
 
    const backtext10 = data[0].sections[0].sections[9];
    const header10 = `<p>${backtext10.content}</p>`;
@@ -248,6 +291,11 @@
 
    ///link11//
 
+
+   const nav_k = data[0].sections[0].sections[10];
+const markup_k = `<a>${nav_k.name}</a>`;
+document.querySelector('a.k').insertAdjacentHTML('beforeend', markup_k);
+
    const backtext11 = data[0].sections[0].sections[10];
    const header11 = `<p>${backtext11.content}</p>`;
    document.querySelector('p.back-text-11').insertAdjacentHTML('beforeend',header11);
@@ -267,6 +315,10 @@
   
 
    ///link12//
+   const nav_l = data[0].sections[0].sections[11];
+   const markup_l = `<a>${nav_l.name}</a>`;
+   document.querySelector('a.l').insertAdjacentHTML('beforeend', markup_l);
+
 
    const backtext12 = data[0].sections[0].sections[11];
    const header12 = `<p>${backtext12.content}</p>`;
@@ -286,6 +338,11 @@
 
    //link13//
 
+   const nav_m = data[0].sections[0].sections[12];
+const markup_m = `<a>${nav_m.name}</a>`;
+document.querySelector('a.m').insertAdjacentHTML('beforeend', markup_m);
+
+
    const backtext13 = data[0].sections[0].sections[12];
    const header13 = `<p>${backtext13.content}</p>`;
    document.querySelector('p.back-text-13').insertAdjacentHTML('beforeend',header13);
@@ -304,6 +361,11 @@
 
    //link14//
 
+   const nav_n = data[0].sections[0].sections[13];
+const markup_n = `<a>${nav_n.name}</a>`;
+document.querySelector('a.n').insertAdjacentHTML('beforeend', markup_n);
+
+
    const backtext14 = data[0].sections[0].sections[13];
    const header14 = `<p>${backtext14.content}</p>`;
    document.querySelector('p.back-text-14').insertAdjacentHTML('beforeend',header14);
@@ -321,6 +383,10 @@
    document.querySelector('p.link-content-14b').insertAdjacentHTML('beforeend',bodyB14);
 
    //link15//
+   const nav_o = data[0].sections[0].sections[14];
+const markup_o = `<a>${nav_o.name}</a>`;
+document.querySelector('a.o').insertAdjacentHTML('beforeend', markup_o);
+
 
    const backtext15 = data[0].sections[0].sections[14];
    const header15 = `<p>${backtext15.content}</p>`;
@@ -340,6 +406,11 @@
 
    //link16//
 
+   const nav_p = data[0].sections[0].sections[15];
+const markup_p = `<a>${nav_p.name}</a>`;
+document.querySelector('a.p').insertAdjacentHTML('beforeend', markup_p);
+
+
    const backtext16 = data[0].sections[0].sections[15];
    const header16 = `<p>${backtext16.content}</p>`;
    document.querySelector('p.back-text-16').insertAdjacentHTML('beforeend',header16);
@@ -358,6 +429,73 @@
 
   
 
+   ////sage page//
+
+   const backtextsage = data[1]
+   const headersage = `<p>${backtextsage.name}</p>`;
+   document.querySelector('p.back-text-sage').insertAdjacentHTML('beforeend',headersage);
+
+   const stopictextsage = data[1]
+   const subtopicsage = `<p>${stopictextsage.name}</p>`;
+   document.querySelector('p.stopic-text-sage').insertAdjacentHTML('beforeend',subtopicsage);
+
+   const bodytextsage = data[1]
+   const bodysage = `<p>${bodytextsage.bodytext}</p>`;
+   document.querySelector('p.link-content-sage').insertAdjacentHTML('beforeend',bodysage);
+
+
+   ////webloan verification page///
+
+   const backtextweb = data[2]
+   const headerweb= `<p>${backtextweb.name}</p>`;
+   document.querySelector('p.back-text-loan').insertAdjacentHTML('beforeend',headerweb);
+
+   const stopictextweb = data[2]
+   const subtopicweb = `<p>${stopictextweb.name}</p>`;
+   document.querySelector('p.stopic-text-loan').insertAdjacentHTML('beforeend',subtopicweb);
+
+   const bodytextweb = data[2]
+   const bodyweb = `<p>${bodytextweb.bodytext}</p>`;
+   document.querySelector('p.link-content-loan').insertAdjacentHTML('beforeend',bodyweb);
+
+
+    ////howtos page///
+
+    const backtexthowtos = data[3]
+    const headerhowtos = `<p>${backtexthowtos.name}</p>`;
+    document.querySelector('p.back-text-howtos').insertAdjacentHTML('beforeend',headerhowtos);
+
+    const stopictexthowtos = data[3]
+    const subtopichowtos = `<p>${stopictexthowtos.name}</p>`;
+    document.querySelector('p.stopic-text-howtos').insertAdjacentHTML('beforeend',subtopichowtos);
+
+    const bodytexthowtos = data[3]
+    const bodyhowtos = `<p>${bodytexthowtos.bodytext}</p>`;
+    document.querySelector('p.link-content-howtos').insertAdjacentHTML('beforeend',bodyhowtos);
+
+
+
+
+
+
+    //sharepoint///
+ 
+
+      const backtextsharepoint = data[0]
+      const headersharepoint = `<p>${backtextsharepoint.name}</p>`;
+      document.querySelector('p.back-text-sharepoint').insertAdjacentHTML('beforeend',headersharepoint);
+
+      const stopictextsharepoint = data[0]
+      const subtopicsharepoint = `<p>${stopictextsharepoint.name}</p>`;
+      document.querySelector('p.stopic-text-sharepoint').insertAdjacentHTML('beforeend',subtopicsharepoint);
+
+      const bodytextsharepoint = data[0]
+      const bodysharepoint = `<p>${bodytextsharepoint.bodytext}</p>`;
+      document.querySelector('p.link-content-sharepoint').insertAdjacentHTML('beforeend',bodysharepoint);
+
+
+
+
 
 
   })
@@ -365,7 +503,6 @@
 
 
 }
-
 let link1 = document.getElementById("course_1")
 let link2 = document.getElementById("course_2");
 let link3 = document.getElementById("course_3");
@@ -904,118 +1041,6 @@ div21.style.display = "block"
 
 })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // // switching pages
 
-  // drop down function on the divs
-
-function myFunction() {
-document.getElementById("myDropdown").classList.toggle("show");
-}
-
-
-
-window.onclick = function(event) {
-if (!event.target.matches('.dropbutton')) {
-var dropdowns = document.getElementsByClassName("dropdown_content");
-var i;
-for (i = 0; i < dropdowns.length; i++) {
-var openDropdown = dropdowns[i];
-if (openDropdown.classList.contains('show')) {
-openDropdown.classList.remove('show');
-}
-}
-}
-}
-
-// 
-
-function myFunctionTwo() {
-document.getElementById("myDropdown_two").classList.toggle("show_two");
-}
-window.onclick = function(event) {
-if (!event.target.matches('.dropbutton_two')) {
-var dropdowns = document.getElementsByClassName("dropdown_content_two");
-var i;
-for (i = 0; i < dropdowns.length; i++) {
-var openDropdown = dropdowns[i];
-if (openDropdown.classList.contains('show_two')) {
-openDropdown.classList.remove('show_two');
-}
-}
-}
-}
-
-//   
-
-function myFunctionThree() {
-document.getElementById("myDropdown_three").classList.toggle("show_three");
-}
-window.onclick = function(event) {
-if (!event.target.matches('.dropbutton_three')) {
-var dropdowns = document.getElementsByClassName("dropdown_content_three");
-var i;
-  for (i = 0; i < dropdowns.length; i++) {
-var openDropdown = dropdowns[i];
-if (openDropdown.classList.contains('show_three')) {
-openDropdown.classList.remove('show_three');
-}
-}
-}
-}
-
-//
-function myFunctionFour() {
-document.getElementById("myDropdown_four").classList.toggle("show_four");
-}
-window.onclick = function(event) {
-if (!event.target.matches('.dropbutton_four')) {
-var dropdowns = document.getElementsByClassName("dropdown_content_four");
-var i;
-for (i = 0; i < dropdowns.length; i++) {
-var openDropdown = dropdowns[i];
-if (openDropdown.classList.contains('show_four')) {
-openDropdown.classList.remove('show_four');
-}
-}
-}
-}
-
-  
-
-
-
-
-
-
-
-
-
-
- 
   
