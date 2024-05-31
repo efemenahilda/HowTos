@@ -3,16 +3,11 @@
 "name":"Sharepoint",
 "id": 1,
 "content": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+"stopic": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+"bodytext": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
 "description": " et99 suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molest",
 
-    {
-
-    "name":"Sharepoint",
-    "id": 1,
-    "content": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
-    "description": " et99 suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molest",
-
-    
+   
 "sections":[
 {
 "name":"button_fifty cent",
@@ -230,12 +225,12 @@
 },
     
 
-
-
 {
 "name":"Sage",
 "id": 1,
 "content": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+"stopic": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+"bodytext": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
 "has_img":"op",
 "img":"op",
 "description": " et99 suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molest"
@@ -245,6 +240,8 @@
 "name":"Web Loan Verification",
 "id": 1,
 "content": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+"stopic": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+"bodytext": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
 "description": " et99 suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molest"
 },
 
@@ -253,9 +250,11 @@
 "name":"HowTos",
 "id": 1,
 "content": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+"stopic": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+"bodytext": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
 "has_img":"op",
 "img":"op",
 "description": " et99 suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molest"
 }
-  }
+  
 ]   
