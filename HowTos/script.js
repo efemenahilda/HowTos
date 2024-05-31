@@ -36,25 +36,7 @@
     const markup4 = `<a>${nav4.name}</a>`;
     document.querySelector('a.courses4').insertAdjacentHTML('beforeend', markup4);
 
-    // //buttons//
-
-    // const button = data[0].sections[0];
-    // const click = `<p>${button.name}</p>`;
-    // document.querySelector('p.button').insertAdjacentHTML('beforeend',click);
-
-    // const button2 = data[0].sections[1];
-    // const click2 = `<p>${button2.name}</p>`;
-    // document.querySelector('p.button2').insertAdjacentHTML('beforeend',click2);
-
-    // const button3 = data[0].sections[2];
-    // const click3 = `<p>${button3.name}</p>`;
-    // document.querySelector('p.button3').insertAdjacentHTML('beforeend',click3);
-
-    // const button4 = data[0].sections[3];
-    // const click4 = `<p>${button4.name}</p>`;
-
-    // document.querySelector('p.button4').insertAdjacentHTML('beforeend',click4)
-
+    
 
    
 
