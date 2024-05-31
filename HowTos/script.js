@@ -14,259 +14,250 @@
 {
  fetch('./sample.json')
   .then(res => {
-    return res.json();
+   return res.json();
   })
   .then(data => {
 
+   //nav//
+   const nav1 = data[0];
+   const markup1 = `<a>${nav1.name}</a>`;
+   document.querySelector('a.courses').insertAdjacentHTML('beforeend', markup1);
 
-//nav//
-    const nav1 = data[0];
-    const markup1 = `<a>${nav1.name}</a>`;
-    document.querySelector('a.courses').insertAdjacentHTML('beforeend', markup1);
+   const nav2 = data[1];
+   const markup2 = `<a>${nav2.name}</a>`;
+   document.querySelector('a.courses2').insertAdjacentHTML('beforeend', markup2);
 
-    const nav2 = data[1];
-    const markup2 = `<a>${nav2.name}</a>`;
-    document.querySelector('a.courses2').insertAdjacentHTML('beforeend', markup2);
+   const nav3 = data[2];
+   const markup3 = `<a>${nav3.name}</a>`;
+   document.querySelector('a.courses3').insertAdjacentHTML('beforeend', markup3);
 
-    const nav3 = data[2];
-    const markup3 = `<a>${nav3.name}</a>`;
-    document.querySelector('a.courses3').insertAdjacentHTML('beforeend', markup3);
+   const nav4= data[3];
+   const markup4 = `<a>${nav4.name}</a>`;
+   document.querySelector('a.courses4').insertAdjacentHTML('beforeend', markup4);
 
-    const nav4= data[3];
-    const markup4 = `<a>${nav4.name}</a>`;
-    document.querySelector('a.courses4').insertAdjacentHTML('beforeend', markup4);
+   ///link1//
 
-    
+   const nav_a = data[4]
+   const markup_a = `<a>${nav_a.name}</a>`;
+   document.querySelector('a.a').insertAdjacentHTML('beforeend', markup_a);
 
-   
+   const backtext = data[4]
+   const header = `<p>${backtext.content}</p>`;
+   document.querySelector('p.back-text').insertAdjacentHTML('beforeend',header);
 
-
-    ///link1//
-
-    const nav_a = data[0].sections[0].sections[0];
-    const markup_a = `<a>${nav_a.name}</a>`;
-    document.querySelector('a.a').insertAdjacentHTML('beforeend', markup_a);
-
-    const backtext = data[0].sections[0].sections[0];
-    const header = `<p>${backtext.content}</p>`;
-    document.querySelector('p.back-text').insertAdjacentHTML('beforeend',header);
-
-   const stopictext = data[0].sections[0].sections[0];
+   const stopictext = data[4]
    const subtopic = `<p>${stopictext.stopic}</p>`;
    document.querySelector('p.stopic-text').insertAdjacentHTML('beforeend',subtopic);
 
-   const bodytext = data[0].sections[0].sections[0];
+   const bodytext = data[4]
    const body = `<p>${bodytext.bodytext}</p>`;
    document.querySelector('p.link-content').insertAdjacentHTML('beforeend',body);
-  
-  //  const img = data[0].sections[0].sections[0];
-  //  const img1 = `<img>${img.hasimg}</img>`;
-  //  document.querySelector('img.main-image-1').insertAdjacentHTML('beforeend',img1);
-  
-
-
+   
+   // const img = data[4]
+   // const img1 = `<img>${img.hasimg}</img>`;
+   // document.querySelector('img.main-image-1').insertAdjacentHTML('beforeend',img1);
+   
 ////link2///
 
-const nav_b = data[0].sections[0].sections[1];
-const markup_b = `<a>${nav_b.name}</a>`;
-document.querySelector('a.b').insertAdjacentHTML('beforeend', markup_b);
+   const nav_b = data[5]
+   const markup_b = `<a>${nav_b.name}</a>`;
+   document.querySelector('a.b').insertAdjacentHTML('beforeend', markup_b);
 
-
-   const backtext2 = data[0].sections[0].sections[1];
+   const backtext2 = data[5]
    const header2 = `<p>${backtext2.content}</p>`;
    document.querySelector('p.back-text-2').insertAdjacentHTML('beforeend',header2);
 
-   const stopictext2 = data[0].sections[0].sections[1];
+   const stopictext2 = data[5]
    const subtopic2 = `<p>${stopictext2.stopic}</p>`;
    document.querySelector('p.stopic-text-2').insertAdjacentHTML('beforeend',subtopic2);
 
-   const bodytext2 = data[0].sections[0].sections[1];
+   const bodytext2 = data[5]
    const body2 = `<p>${bodytext2.bodytext}</p>`;
    document.querySelector('p.link-content-2a').insertAdjacentHTML('beforeend',body2);
 
-   const bodytextB2 = data[0].sections[0].sections[1];
+   const bodytextB2 = data[5]
    const bodyB2 = `<p>${bodytextB2.bodytextB}</p>`;
    document.querySelector('p.link-content-2b').insertAdjacentHTML('beforeend',bodyB2);
 
-  ///link3///
+///link3///
 
-  const nav_c = data[0].sections[0].sections[2];
-const markup_c = `<a>${nav_c.name}</a>`;
-document.querySelector('a.c').insertAdjacentHTML('beforeend', markup_c);
+  const nav_c = data[6]
+  const markup_c = `<a>${nav_c.name}</a>`;
+  document.querySelector('a.c').insertAdjacentHTML('beforeend', markup_c);
 
 
-   const backtext3 = data[0].sections[0].sections[2];
+   const backtext3 = data[6]
    const header3 = `<p>${backtext3.content}</p>`;
    document.querySelector('p.back-text-3').insertAdjacentHTML('beforeend',header3);
 
-   const stopictext3 = data[0].sections[0].sections[2];
+   const stopictext3 = data[6]
    const subtopic3 = `<p>${stopictext3.stopic}</p>`;
    document.querySelector('p.stopic-text-3').insertAdjacentHTML('beforeend',subtopic3);
 
   
-   const bodytext3 = data[0].sections[0].sections[2];
+   const bodytext3 = data[6]
    const body3 = `<p>${bodytext3.bodytext}</p>`;
    document.querySelector('p.link-content-3a').insertAdjacentHTML('beforeend',body3);
 
-   const bodytextB3 = data[0].sections[0].sections[2];
+   const bodytextB3 = data[6]
    const bodyB3 = `<p>${bodytextB3.bodytextB}</p>`;
    document.querySelector('p.link-content-3b').insertAdjacentHTML('beforeend',bodyB3);
 
   ///link4
-  const nav_d = data[0].sections[0].sections[3];
+  const nav_d = data[7]
   const markup_d = `<a>${nav_d.name}</a>`;
   document.querySelector('a.d').insertAdjacentHTML('beforeend', markup_d);
   
-   const backtext4 = data[0].sections[0].sections[3];
+   const backtext4 = data[7]
    const header4 = `<p>${backtext4.content}</p>`;
    document.querySelector('p.back-text-4').insertAdjacentHTML('beforeend',header4);
 
-   const stopictext4 = data[0].sections[0].sections[3];
+   const stopictext4 = data[7]
    const subtopic4 = `<p>${stopictext4.stopic}</p>`;
    document.querySelector('p.stopic-text-4').insertAdjacentHTML('beforeend',subtopic4);
 
-   const bodytext4 = data[0].sections[0].sections[3];
+   const bodytext4 = data[7]
    const body4 = `<p>${bodytext4.bodytext}</p>`;
    document.querySelector('p.link-content-4a').insertAdjacentHTML('beforeend',body4);
 
-   const bodytextB4 = data[0].sections[0].sections[3];
+   const bodytextB4 = data[7]
    const bodyB4 = `<p>${bodytextB4.bodytextB}</p>`;
    document.querySelector('p.link-content-4b').insertAdjacentHTML('beforeend',bodyB4);
 
    ///link5///
-   const nav_e = data[0].sections[0].sections[4];
-     const markup_e = `<a>${nav_e.name}</a>`;
-     document.querySelector('a.e').insertAdjacentHTML('beforeend', markup_e);
+   const nav_e = data[8]
+   const markup_e = `<a>${nav_e.name}</a>`;
+   document.querySelector('a.e').insertAdjacentHTML('beforeend', markup_e);
 
 
-   const backtext5 = data[0].sections[0].sections[4];
+   const backtext5 = data[8]
    const header5 = `<p>${backtext5.content}</p>`;
    document.querySelector('p.back-text-5').insertAdjacentHTML('beforeend',header5);
 
-   const stopictext5 = data[0].sections[0].sections[4];
+   const stopictext5 = data[8]
    const subtopic5 = `<p>${stopictext5.stopic}</p>`;
    document.querySelector('p.stopic-text-5').insertAdjacentHTML('beforeend',subtopic5);
 
-   const bodytext5 = data[0].sections[0].sections[4];
+   const bodytext5 = data[8]
    const body5 = `<p>${bodytext5.bodytext}</p>`;
    document.querySelector('p.link-content-5a').insertAdjacentHTML('beforeend',body5);
 
-   const bodytextB5 = data[0].sections[0].sections[4];
+   const bodytextB5 = data[8]
    const bodyB5 = `<p>${bodytextB5.bodytextB}</p>`;
    document.querySelector('p.link-content-5b').insertAdjacentHTML('beforeend',bodyB5);
 
   
    ///link6///
-   const nav_f = data[0].sections[0].sections[5];
+   const nav_f = data[9]
    const markup_f = `<a>${nav_f.name}</a>`;
    document.querySelector('a.f').insertAdjacentHTML('beforeend', markup_f);
    
 
-   const backtext6 = data[0].sections[0].sections[5];
+   const backtext6 = data[9]
    const header6 = `<p>${backtext6.content}</p>`;
    document.querySelector('p.back-text-6').insertAdjacentHTML('beforeend',header6);
 
-   const stopictext6 = data[0].sections[0].sections[5];
+   const stopictext6 = data[9]
    const subtopic6 = `<p>${stopictext6.stopic}</p>`;
    document.querySelector('p.stopic-text-6').insertAdjacentHTML('beforeend',subtopic6);
 
-   const bodytext6 = data[0].sections[0].sections[5];
+   const bodytext6 = data[9]
    const body6 = `<p>${bodytext6.bodytext}</p>`;
    document.querySelector('p.link-content-6a').insertAdjacentHTML('beforeend',body6);
 
-   const bodytextB6 = data[0].sections[0].sections[5];
+   const bodytextB6 = data[9]
    const bodyB6 = `<p>${bodytextB6.bodytextB}</p>`;
    document.querySelector('p.link-content-6b').insertAdjacentHTML('beforeend',bodyB6);
 
    ////link7///
 
-    const nav_g = data[0].sections[0].sections[6];
-    const markup_g = `<a>${nav_g.name}</a>`;
-    document.querySelector('a.g').insertAdjacentHTML('beforeend', markup_g);
+   const nav_g = data[10]
+   const markup_g = `<a>${nav_g.name}</a>`;
+   document.querySelector('a.g').insertAdjacentHTML('beforeend', markup_g);
 
-   const backtext7 = data[0].sections[0].sections[6];
+   const backtext7 = data[10]
    const header7= `<p>${backtext7.content}</p>`;
    document.querySelector('p.back-text-7').insertAdjacentHTML('beforeend',header7);
 
-   const stopictext7 = data[0].sections[0].sections[6];
+   const stopictext7 = data[10]
    const subtopic7= `<p>${stopictext7.stopic}</p>`;
    document.querySelector('p.stopic-text-7').insertAdjacentHTML('beforeend',subtopic7);
 
-   const bodytext7 = data[0].sections[0].sections[6];
+   const bodytext7 = data[10]
    const body7 = `<p>${bodytext7.bodytext}</p>`;
    document.querySelector('p.link-content-7a').insertAdjacentHTML('beforeend',body7);
 
-   const bodytextB7 = data[0].sections[0].sections[6];
+   const bodytextB7 = data[10]
    const bodyB7 = `<p>${bodytextB7.bodytextB}</p>`;
    document.querySelector('p.link-content-7b').insertAdjacentHTML('beforeend',bodyB7);
 
    //link8///
 
-   const nav_h = data[0].sections[0].sections[7];
+   const nav_h = data[11]
    const markup_h = `<a>${nav_h.name}</a>`;
    document.querySelector('a.h').insertAdjacentHTML('beforeend', markup_h);
    
 
-   const backtext8 = data[0].sections[0].sections[7];
+   const backtext8 = data[11]
    const header8= `<p>${backtext8.content}</p>`;
    document.querySelector('p.back-text-8').insertAdjacentHTML('beforeend',header8);
 
-   const stopictext8 = data[0].sections[0].sections[7];
+   const stopictext8 = data[11]
    const subtopic8= `<p>${stopictext8.stopic}</p>`;
    document.querySelector('p.stopic-text-8').insertAdjacentHTML('beforeend',subtopic8);
 
-   const bodytext8 = data[0].sections[0].sections[7];
+   const bodytext8 = data[11]
    const body8 = `<p>${bodytext8.bodytext}</p>`;
    document.querySelector('p.link-content-8a').insertAdjacentHTML('beforeend',body8);
 
-   const bodytextB8 = data[0].sections[0].sections[7];
+   const bodytextB8 = data[11]
    const bodyB8 = `<p>${bodytextB8.bodytextB}</p>`;
    document.querySelector('p.link-content-8b').insertAdjacentHTML('beforeend',bodyB8);
 
    ///link9///
 
-   const nav_i = data[0].sections[0].sections[8];
+   const nav_i = data[12]
    const markup_i = `<a>${nav_i.name}</a>`;
    document.querySelector('a.i').insertAdjacentHTML('beforeend', markup_i);
    
 
-   const backtext9 = data[0].sections[0].sections[8];
+   const backtext9 = data[12]
    const header9 = `<p>${backtext9.content}</p>`;
    document.querySelector('p.back-text-9').insertAdjacentHTML('beforeend',header9);
 
-   const stopictext9 = data[0].sections[0].sections[8];
+   const stopictext9 = data[12]
    const subtopic9= `<p>${stopictext9.stopic}</p>`;
    document.querySelector('p.stopic-text-9').insertAdjacentHTML('beforeend',subtopic9);
 
-   const bodytext9 = data[0].sections[0].sections[8];
+   const bodytext9 = data[12]
    const body9 = `<p>${bodytext9.bodytext}</p>`;
    document.querySelector('p.link-content-9a').insertAdjacentHTML('beforeend',body9);
 
-   const bodytextB9 = data[0].sections[0].sections[9];
+   const bodytextB9 = data[12]
    const bodyB9 = `<p>${bodytextB9.bodytextB}</p>`;
    document.querySelector('p.link-content-9b').insertAdjacentHTML('beforeend',bodyB9);
 
    ///link10//
 
 
-   const nav_j = data[0].sections[0].sections[9];
-const markup_j = `<a>${nav_j.name}</a>`;
-document.querySelector('a.j').insertAdjacentHTML('beforeend', markup_j);
+   const nav_j = data[13]
+   const markup_j = `<a>${nav_j.name}</a>`;
+   document.querySelector('a.j').insertAdjacentHTML('beforeend', markup_j);
 
 
-   const backtext10 = data[0].sections[0].sections[9];
+   const backtext10 = data[13]
    const header10 = `<p>${backtext10.content}</p>`;
    document.querySelector('p.back-text-10').insertAdjacentHTML('beforeend',header10);
 
-   const stopictext10 = data[0].sections[0].sections[9];
+   const stopictext10 = data[13]
    const subtopic10= `<p>${stopictext10.stopic}</p>`;
    document.querySelector('p.stopic-text-10').insertAdjacentHTML('beforeend',subtopic10);
 
-   const bodytext10 = data[0].sections[0].sections[9];
+   const bodytext10 = data[13]
    const body10 = `<p>${bodytext10.bodytext}</p>`;
    document.querySelector('p.link-content-10a').insertAdjacentHTML('beforeend',body10);
 
-   const bodytextB10 = data[0].sections[0].sections[9];
+   const bodytextB10 = data[13]
    const bodyB10 = `<p>${bodytextB10.bodytextB}</p>`;
    document.querySelector('p.link-content-10b').insertAdjacentHTML('beforeend',bodyB10);
 
@@ -274,142 +265,136 @@ document.querySelector('a.j').insertAdjacentHTML('beforeend', markup_j);
    ///link11//
 
 
-   const nav_k = data[0].sections[0].sections[10];
-const markup_k = `<a>${nav_k.name}</a>`;
-document.querySelector('a.k').insertAdjacentHTML('beforeend', markup_k);
+   const nav_k = data[14]
+   const markup_k = `<a>${nav_k.name}</a>`;
+   document.querySelector('a.k').insertAdjacentHTML('beforeend', markup_k);
 
-   const backtext11 = data[0].sections[0].sections[10];
+   const backtext11 = data[14]
    const header11 = `<p>${backtext11.content}</p>`;
    document.querySelector('p.back-text-11').insertAdjacentHTML('beforeend',header11);
 
-   const stopictext11 = data[0].sections[0].sections[10];
+   const stopictext11 = data[14]
    const subtopic11= `<p>${stopictext11.stopic}</p>`;
    document.querySelector('p.stopic-text-11').insertAdjacentHTML('beforeend',subtopic11);
 
-   const bodytext11= data[0].sections[0].sections[10];
+   const bodytext11= data[14]
    const body11 = `<p>${bodytext11.bodytext}</p>`;
    document.querySelector('p.link-content-11a').insertAdjacentHTML('beforeend',body11);
 
-   const bodytextB11 = data[0].sections[0].sections[10];
+   const bodytextB11 = data[14]
    const bodyB11 = `<p>${bodytextB11.bodytextB}</p>`;
    document.querySelector('p.link-content-11b').insertAdjacentHTML('beforeend',bodyB11);
   
   
 
    ///link12//
-   const nav_l = data[0].sections[0].sections[11];
+   const nav_l = data[15]
    const markup_l = `<a>${nav_l.name}</a>`;
    document.querySelector('a.l').insertAdjacentHTML('beforeend', markup_l);
 
 
-   const backtext12 = data[0].sections[0].sections[11];
+   const backtext12 = data[15]
    const header12 = `<p>${backtext12.content}</p>`;
    document.querySelector('p.back-text-12').insertAdjacentHTML('beforeend',header12);
 
-   const stopictext12 = data[0].sections[0].sections[11];
+   const stopictext12 = data[15]
    const subtopic12= `<p>${stopictext12.stopic}</p>`;
    document.querySelector('p.stopic-text-12').insertAdjacentHTML('beforeend',subtopic12);
 
-   const bodytext12 = data[0].sections[0].sections[11];
+   const bodytext12 = data[15]
    const body12 = `<p>${bodytext12.bodytext}</p>`;
    document.querySelector('p.link-content-12a').insertAdjacentHTML('beforeend',body12);
 
-   const bodytextB12 = data[0].sections[0].sections[11];
+   const bodytextB12 = data[15]
    const bodyB12 = `<p>${bodytextB12.bodytextB}</p>`;
    document.querySelector('p.link-content-12b').insertAdjacentHTML('beforeend',bodyB12);
 
    //link13//
 
-   const nav_m = data[0].sections[0].sections[12];
-const markup_m = `<a>${nav_m.name}</a>`;
-document.querySelector('a.m').insertAdjacentHTML('beforeend', markup_m);
+   const nav_m = data[16]
+   const markup_m = `<a>${nav_m.name}</a>`;
+   document.querySelector('a.m').insertAdjacentHTML('beforeend', markup_m);
 
-
-   const backtext13 = data[0].sections[0].sections[12];
+   const backtext13 = data[16]
    const header13 = `<p>${backtext13.content}</p>`;
    document.querySelector('p.back-text-13').insertAdjacentHTML('beforeend',header13);
 
-   const stopictext13 = data[0].sections[0].sections[12];
+   const stopictext13 = data[16]
    const subtopic13= `<p>${stopictext13.stopic}</p>`;
    document.querySelector('p.stopic-text-13').insertAdjacentHTML('beforeend',subtopic13);
 
-   const bodytext13 = data[0].sections[0].sections[12];
+   const bodytext13 = data[16]
    const body13 = `<p>${bodytext13.bodytext}</p>`;
    document.querySelector('p.link-content-13a').insertAdjacentHTML('beforeend',body13);
 
-   const bodytextB13 = data[0].sections[0].sections[12];
+   const bodytextB13 = data[16]
    const bodyB13 = `<p>${bodytextB13.bodytextB}</p>`;
    document.querySelector('p.link-content-13b').insertAdjacentHTML('beforeend',bodyB13);
 
    //link14//
 
-   const nav_n = data[0].sections[0].sections[13];
-const markup_n = `<a>${nav_n.name}</a>`;
-document.querySelector('a.n').insertAdjacentHTML('beforeend', markup_n);
+   const nav_n = data[17]
+   const markup_n = `<a>${nav_n.name}</a>`;
+   document.querySelector('a.n').insertAdjacentHTML('beforeend', markup_n);
 
-
-   const backtext14 = data[0].sections[0].sections[13];
+   const backtext14 = data[17]
    const header14 = `<p>${backtext14.content}</p>`;
    document.querySelector('p.back-text-14').insertAdjacentHTML('beforeend',header14);
 
-   const stopictext14 = data[0].sections[0].sections[13];
+   const stopictext14 = data[17]
    const subtopic14= `<p>${stopictext14.stopic}</p>`;
    document.querySelector('p.stopic-text-14').insertAdjacentHTML('beforeend',subtopic14);
 
-   const bodytext14 = data[0].sections[0].sections[13];
+   const bodytext14 = data[17]
    const body14 = `<p>${bodytext14.bodytext}</p>`;
    document.querySelector('p.link-content-14a').insertAdjacentHTML('beforeend',body14);
 
-   const bodytextB14 = data[0].sections[0].sections[13];
+   const bodytextB14 = data[17]
    const bodyB14 = `<p>${bodytextB14.bodytextB}</p>`;
    document.querySelector('p.link-content-14b').insertAdjacentHTML('beforeend',bodyB14);
 
    //link15//
-   const nav_o = data[0].sections[0].sections[14];
-const markup_o = `<a>${nav_o.name}</a>`;
-document.querySelector('a.o').insertAdjacentHTML('beforeend', markup_o);
+   const nav_o = data[18]
+   const markup_o = `<a>${nav_o.name}</a>`;
+   document.querySelector('a.o').insertAdjacentHTML('beforeend', markup_o);
 
-
-   const backtext15 = data[0].sections[0].sections[14];
+   const backtext15 = data[18]
    const header15 = `<p>${backtext15.content}</p>`;
    document.querySelector('p.back-text-15').insertAdjacentHTML('beforeend',header15);
 
-   const stopictext15 = data[0].sections[0].sections[14];
+   const stopictext15 = data[18]
    const subtopic15= `<p>${stopictext15.stopic}</p>`;
    document.querySelector('p.stopic-text-15').insertAdjacentHTML('beforeend',subtopic15);
 
-   const bodytext15 = data[0].sections[0].sections[14];
+   const bodytext15 = data[18]
    const body15 = `<p>${bodytext15.bodytext}</p>`;
    document.querySelector('p.link-content-15a').insertAdjacentHTML('beforeend',body15);
 
-   const bodytextB15 = data[0].sections[0].sections[14];
+   const bodytextB15 = data[18]
    const bodyB15 = `<p>${bodytextB15.bodytextB}</p>`;
    document.querySelector('p.link-content-15b').insertAdjacentHTML('beforeend',bodyB15);
 
    //link16//
 
-   const nav_p = data[0].sections[0].sections[15];
-const markup_p = `<a>${nav_p.name}</a>`;
-document.querySelector('a.p').insertAdjacentHTML('beforeend', markup_p);
+   const nav_p = data[19]
+   const markup_p = `<a>${nav_p.name}</a>`;
+   document.querySelector('a.p').insertAdjacentHTML('beforeend', markup_p);
 
-
-   const backtext16 = data[0].sections[0].sections[15];
+   const backtext16 = data[19]
    const header16 = `<p>${backtext16.content}</p>`;
    document.querySelector('p.back-text-16').insertAdjacentHTML('beforeend',header16);
 
-   const stopictext16 = data[0].sections[0].sections[15];
+   const stopictext16 = data[19]
    const subtopic16= `<p>${stopictext16.stopic}</p>`;
    document.querySelector('p.stopic-text-16').insertAdjacentHTML('beforeend',subtopic16);
 
-   const bodytext16 = data[0].sections[0].sections[15];
+   const bodytext16 = data[19]
    const body16 = `<p>${bodytext16.bodytext}</p>`;
    document.querySelector('p.link-content-16a').insertAdjacentHTML('beforeend',body16);
 
-   const bodytextB16 = data[0].sections[0].sections[15];
+   const bodytextB16 = data[19]
    const bodyB16 = `<p>${bodytextB16.bodytextB}</p>`;
    document.querySelector('p.link-content-16b').insertAdjacentHTML('beforeend',bodyB16);
-
-  
 
    ////sage page//
 
@@ -425,7 +410,6 @@ document.querySelector('a.p').insertAdjacentHTML('beforeend', markup_p);
    const bodysage = `<p>${bodytextsage.bodytext}</p>`;
    document.querySelector('p.link-content-sage').insertAdjacentHTML('beforeend',bodysage);
 
-
    ////webloan verification page///
 
    const backtextweb = data[2]
@@ -440,45 +424,33 @@ document.querySelector('a.p').insertAdjacentHTML('beforeend', markup_p);
    const bodyweb = `<p>${bodytextweb.bodytext}</p>`;
    document.querySelector('p.link-content-loan').insertAdjacentHTML('beforeend',bodyweb);
 
+   ////howtos page///
 
-    ////howtos page///
+   const backtexthowtos = data[3]
+   const headerhowtos = `<p>${backtexthowtos.name}</p>`;
+   document.querySelector('p.back-text-howtos').insertAdjacentHTML('beforeend',headerhowtos);
 
-    const backtexthowtos = data[3]
-    const headerhowtos = `<p>${backtexthowtos.name}</p>`;
-    document.querySelector('p.back-text-howtos').insertAdjacentHTML('beforeend',headerhowtos);
+   const stopictexthowtos = data[3]
+   const subtopichowtos = `<p>${stopictexthowtos.name}</p>`;
+   document.querySelector('p.stopic-text-howtos').insertAdjacentHTML('beforeend',subtopichowtos);
 
-    const stopictexthowtos = data[3]
-    const subtopichowtos = `<p>${stopictexthowtos.name}</p>`;
-    document.querySelector('p.stopic-text-howtos').insertAdjacentHTML('beforeend',subtopichowtos);
+   const bodytexthowtos = data[3]
+   const bodyhowtos = `<p>${bodytexthowtos.bodytext}</p>`;
+   document.querySelector('p.link-content-howtos').insertAdjacentHTML('beforeend',bodyhowtos);
 
-    const bodytexthowtos = data[3]
-    const bodyhowtos = `<p>${bodytexthowtos.bodytext}</p>`;
-    document.querySelector('p.link-content-howtos').insertAdjacentHTML('beforeend',bodyhowtos);
+   //sharepoint///
 
+   const backtextsharepoint = data[0]
+   const headersharepoint = `<p>${backtextsharepoint.name}</p>`;
+   document.querySelector('p.back-text-sharepoint').insertAdjacentHTML('beforeend',headersharepoint);
 
+   const stopictextsharepoint = data[0]
+   const subtopicsharepoint = `<p>${stopictextsharepoint.name}</p>`;
+   document.querySelector('p.stopic-text-sharepoint').insertAdjacentHTML('beforeend',subtopicsharepoint);
 
-
-
-
-    //sharepoint///
- 
-
-      const backtextsharepoint = data[0]
-      const headersharepoint = `<p>${backtextsharepoint.name}</p>`;
-      document.querySelector('p.back-text-sharepoint').insertAdjacentHTML('beforeend',headersharepoint);
-
-      const stopictextsharepoint = data[0]
-      const subtopicsharepoint = `<p>${stopictextsharepoint.name}</p>`;
-      document.querySelector('p.stopic-text-sharepoint').insertAdjacentHTML('beforeend',subtopicsharepoint);
-
-      const bodytextsharepoint = data[0]
-      const bodysharepoint = `<p>${bodytextsharepoint.bodytext}</p>`;
-      document.querySelector('p.link-content-sharepoint').insertAdjacentHTML('beforeend',bodysharepoint);
-
-
-
-
-
+   const bodytextsharepoint = data[0]
+   const bodysharepoint = `<p>${bodytextsharepoint.bodytext}</p>`;
+   document.querySelector('p.link-content-sharepoint').insertAdjacentHTML('beforeend',bodysharepoint);
 
   })
   .catch(error => console.log(error));
