@@ -52,7 +52,12 @@
    const bodytext = data[4]
    const body = `<p>${bodytext.bodytext}</p>`;
    document.querySelector('p.link-content').insertAdjacentHTML('beforeend',body);
+
    
+   
+
+
+
    // const img = data[4]
    // const img1 = `<img>${img.hasimg}</img>`;
    // document.querySelector('img.main-image-1').insertAdjacentHTML('beforeend',img1);
@@ -438,25 +443,36 @@
    const bodyhowtos = `<p>${bodytexthowtos.bodytext}</p>`;
    document.querySelector('p.link-content-howtos').insertAdjacentHTML('beforeend',bodyhowtos);
 
-   //sharepoint///
+   
+   const subhowtos = data[3];
+   const subthowtos = `<p>${subhowtos.bodytext}</p>`;
+   document.querySelector('p.link-content-howtos').insertAdjacentHTML('beforeend',subthowtos);
 
-   const backtextsharepoint = data[0]
-   const headersharepoint = `<p>${backtextsharepoint.name}</p>`;
-   document.querySelector('p.back-text-sharepoint').insertAdjacentHTML('beforeend',headersharepoint);
+   
+//sharepoint///
 
-   const stopictextsharepoint = data[0]
-   const subtopicsharepoint = `<p>${stopictextsharepoint.name}</p>`;
-   document.querySelector('p.stopic-text-sharepoint').insertAdjacentHTML('beforeend',subtopicsharepoint);
+const backtextsharepoint = data[0];
+const headersharepoint = `<p>${backtextsharepoint.name}</p>`;
+document.querySelector('p.back-text-sharepoint').insertAdjacentHTML('beforeend',headersharepoint);
 
-   const bodytextsharepoint = data[0]
-   const bodysharepoint = `<p>${bodytextsharepoint.bodytext}</p>`;
-   document.querySelector('p.link-content-sharepoint').insertAdjacentHTML('beforeend',bodysharepoint);
+const stopictextsharepoint = data[0];
+const subtopicsharepoint = `<p>${stopictextsharepoint.name}</p>`;
+document.querySelector('p.stopic-text-sharepoint').insertAdjacentHTML('beforeend',subtopicsharepoint);
 
-  })
-  .catch(error => console.log(error));
+const bodytextsharepoint = data[0];
+const bodysharepoint = `<p>${bodytextsharepoint.bodytext}</p>`;
+document.querySelector('p.link-content-sharepoint').insertAdjacentHTML('beforeend',bodysharepoint);
 
+const sharepointsubtopic = data[0];
+const sharepointsub = `<p>${sharepointsubtopic.name}</p>`;
+document.querySelector('p.sub-topicsharepoint').insertAdjacentHTML('beforeend',sharepointsub);
+
+})
+.catch(error => console.log(error));
 
 }
+
+
 let link1 = document.getElementById("course_1")
 let link2 = document.getElementById("course_2");
 let link3 = document.getElementById("course_3");
@@ -483,7 +499,6 @@ let div1 = document.getElementById("content")
 let div2 = document.getElementById("sage");
 let div3 = document.getElementById("loan");
 let div4 = document.getElementById("howtos");
-
 
 let div6 = document.getElementById("hero")
 let div7 = document.getElementById("page2")

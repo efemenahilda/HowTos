@@ -144,7 +144,7 @@ nav{
 a{
     display: block;
     width: 70%;
-    margin-top: 5%;
+    margin-top: 20px;
     margin-left: 15%;
     background: none;
     text-decoration: none;
@@ -194,10 +194,14 @@ a:hover{
     display: none;
     flex:5;
 }
+
 .page2{
     display: none;
     flex:5;
 }
+/* .page2{a(p)}{
+    display: flex;
+} */
 .page3{
     display: none;
     flex:5;
@@ -255,6 +259,20 @@ a:hover{
     flex:5;
 }
 
+.top-text{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
 .fa-chevron-down{
     float: right;
 }
@@ -292,7 +310,7 @@ a:hover{
 }
 .stopic-text ,.stopic-text-2,.stopic-text-3,.stopic-text-4,.stopic-text-5,.stopic-text-6,.stopic-text-7,.stopic-text-8,.stopic-text-9,.stopic-text-10,.stopic-text-11,.stopic-text-12,.stopic-text-13,.stopic-text-14,.stopic-text-15,.stopic-text-16,.stopic-text-sage,.stopic-text-loan,.stopic-text-howtos,.stopic-text-sharepoint{
     color: #39B54A;
-    margin: 0.5% 5%;
+    /* margin: 0.5% 5%; */
 }
 .main-text-container {
     margin: 5% 10% 0 5%;
